@@ -167,7 +167,7 @@ If you utilize TRACEBIND in your research, please cite the manuscript:
 ```bibtex
 @article{tracebind2026,
   title={TRACEBIND: A Hierarchical Descriptor Taxonomy for Spatial Phase Organization and Atmospheric Kinematics},
-  author={TRACEBIND Research Team},
+  author={Mohammed Ali, Independent Researcher},
   journal={Formal Methodological Research Manuscript},
   year={2026},
   version={2.0}
