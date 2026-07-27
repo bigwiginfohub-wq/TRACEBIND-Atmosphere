@@ -1,0 +1,6 @@
+Descriptor,Cliffs_Delta,Synth_Radial_Z,Synth_Elliptical_Z,Synth_Front_Z,Exploratory_LogReg_W,Exploratory_LDA_W
+LE,0.667,3.9,-0.7,-4.59,24.1664,0.3225
+A_radial,0.389,4.89,4.02,-1.03,28.9311,-0.062
+C_orient,0.0,0.4,-15.96,-11.52,-6.8739,0.1154
+S_orient,-0.222,-0.66,-0.55,2.64,-1.9589,-0.2018
+GE,-0.722,-4.68,-1.38,1.0,6.255,0.0272

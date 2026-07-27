@@ -1,0 +1,7 @@
+Storm,P5A_Cohen_d,P5A_p_val,Peak_GE_Hour,P5B_Rate_Cohen_d,P5B_p_val,P5B_Significant,Category,Vmax_kt,Pmin_hPa,RI_24h_kt,Translation_Speed_kmh,Source
+Amphan,-81.52,0.001,57,4.04,0.002,True,Super Cyclone,140,920,65,18.5,JTWC Best Track (2020)
+Fani,-92.61,0.001,15,-2.72,1.0,False,Extremely Severe,130,932,35,12.0,IMD Best Track (2019)
+Mocha,-75.88,0.001,52,2.85,0.012,True,Extremely Severe,150,918,55,21.3,JTWC Best Track (2023)
+Yaas,-91.72,0.001,32,1.12,0.1238,False,Very Severe,75,970,20,15.2,IMD Best Track (2021)
+Sidr,-90.69,0.001,57,-2.32,1.0,False,Extremely Severe,140,944,60,24.0,JTWC Best Track (2007)
+Nargis,-89.89,0.001,35,-1.6,0.984,False,Extremely Severe,115,962,40,11.5,IMD Best Track (2008)

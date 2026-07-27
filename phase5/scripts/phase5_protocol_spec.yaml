@@ -1,0 +1,34 @@
+protocol_version: "TRACEBIND-P5.0-FROZEN"
+freeze_date: "2026-07-25"
+status: "FROZEN_FOR_EXPANDED_VALIDATION"
+
+dataset_specification:
+  provider: "Copernicus Climate Data Store (ERA5)"
+  variable: "msl"
+  units: "Pa"
+  spatial_resolution_deg: 0.25
+  time_coordinate_name: "valid_time"
+  window_length_hours: 72
+  time_step_hours: 1
+
+null_models:
+  phase_5a_spatial:
+    method: "Spatial Array Permutation"
+    implementation: "rng.permutation"
+    permutations: 1000
+    seed: 42
+    alpha_threshold: 0.05
+  phase_5b_temporal:
+    method: "Fourier Phase Randomization Surrogates"
+    implementation: "rfft / irfft with randomized phase spectrum"
+    surrogates: 1000
+    seed: 42
+    alpha_threshold: 0.05
+
+primary_metrics:
+  spatial: "Spatial Gradient Energy (GE)"
+  temporal_rate: "Peak Absolute Gradient Energy Rate (|dGE/dt|)"
+
+decision_rules:
+  spatial_qc_pass: "P5A_p_val < 0.05"
+  temporal_falsification_pass: "P5B_p_val < 0.05"

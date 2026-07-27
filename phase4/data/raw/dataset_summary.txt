@@ -1,0 +1,42 @@
+======================================================================
+DATASET PROFILING REPORT: era5_amphan_72h.nc
+======================================================================
+
+[STRUCTURE & DIMENSIONS]
+Dimensions : {'valid_time': 96, 'pressure_level': 1, 'latitude': 93, 'longitude': 81}
+Data Vars  : ['z', 'msl']
+
+[COORDINATE RANGES]
+Latitude   : 5.000° to 28.000° (Total: 93)
+  └─ Latitude Ordering: Decreasing (North -> South) [ERA5 Standard]
+Longitude  : 78.000° to 98.000° (Total: 81)
+
+[TIME COVERAGE]
+Start Time : 2020-05-17T00:00:00.000000000
+End Time   : 2020-05-20T23:00:00.000000000
+Total Steps: 96 frames
+
+[PRIMARY TARGET VARIABLE]
+Selected   : 'z'
+Raw Units  : m**2 s**-2
+
+<xarray.Dataset> Size: 6MB
+Dimensions:         (valid_time: 96, pressure_level: 1, latitude: 93,
+                     longitude: 81)
+Coordinates:
+  * valid_time      (valid_time) datetime64[ns] 768B 2020-05-17 ... 2020-05-2...
+    expver          (valid_time) <U4 2kB ...
+  * pressure_level  (pressure_level) float64 8B 500.0
+  * latitude        (latitude) float64 744B 28.0 27.75 27.5 ... 5.5 5.25 5.0
+  * longitude       (longitude) float64 648B 78.0 78.25 78.5 ... 97.5 97.75 98.0
+    number          int64 8B ...
+Data variables:
+    z               (valid_time, pressure_level, latitude, longitude) float32 3MB ...
+    msl             (valid_time, latitude, longitude) float32 3MB ...
+Attributes:
+    GRIB_centre:             ecmf
+    GRIB_centreDescription:  European Centre for Medium-Range Weather Forecasts
+    GRIB_subCentre:          0
+    Conventions:             CF-1.7
+    institution:             European Centre for Medium-Range Weather Forecasts
+    history:                 2026-07-24T17:35 GRIB to CDM+CF via cfgrib-0.9.1...

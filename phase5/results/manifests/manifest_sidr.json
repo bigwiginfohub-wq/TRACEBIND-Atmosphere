@@ -1,0 +1,41 @@
+{
+    "metadata": {
+        "algorithm_id": "TRACEBIND-P5.0-FROZEN",
+        "pipeline_version": "5.0.0",
+        "timestamp_utc": "2026-07-25T13:17:51.422430Z",
+        "git_commit": "UNKNOWN_OR_NOT_A_GIT_REPO"
+    },
+    "dataset": {
+        "provider": "Copernicus Climate Data Store (ERA5)",
+        "storm": "Sidr",
+        "input_file": "era5_sidr_72h.nc",
+        "input_md5": "a25afae9fdaefead65fc62f716176047",
+        "time_coordinate": "valid_time",
+        "grid_resolution": "0.25 deg",
+        "dimensions": {
+            "time_steps": 96,
+            "lat_range": [
+                5.0,
+                25.0
+            ],
+            "lon_range": [
+                80.0,
+                100.0
+            ],
+            "var_name": "msl"
+        }
+    },
+    "environment": {
+        "python_version": "3.14.4",
+        "os_platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.1",
+        "scipy_version": "1.18.0",
+        "xarray_version": "2026.7.0",
+        "pandas_version": "3.0.3"
+    },
+    "random_generator_spec": {
+        "explicit_rng": "np.random.default_rng(42)",
+        "seed": 42,
+        "n_permutations": 1000
+    }
+}

@@ -1,0 +1,5 @@
+Comparison,Spearman_rho,p_val
+Trajectory Effect Size vs. 24h Intensification Rate,0.429,0.397
+Trajectory Effect Size vs. Maximum Wind Speed,0.319,0.538
+Trajectory Effect Size vs. Translation Speed,0.257,0.623
+Trajectory p-value vs. 24h Intensification Rate,-0.348,0.499

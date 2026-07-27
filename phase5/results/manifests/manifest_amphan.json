@@ -1,0 +1,41 @@
+{
+    "metadata": {
+        "algorithm_id": "TRACEBIND-P5.0-FROZEN",
+        "pipeline_version": "5.0.0",
+        "timestamp_utc": "2026-07-25T13:17:50.451598Z",
+        "git_commit": "UNKNOWN_OR_NOT_A_GIT_REPO"
+    },
+    "dataset": {
+        "provider": "Copernicus Climate Data Store (ERA5)",
+        "storm": "Amphan",
+        "input_file": "era5_amphan_72h.nc",
+        "input_md5": "df5e369804a90787e1c17b24f850b2d6",
+        "time_coordinate": "valid_time",
+        "grid_resolution": "0.25 deg",
+        "dimensions": {
+            "time_steps": 96,
+            "lat_range": [
+                5.0,
+                28.0
+            ],
+            "lon_range": [
+                78.0,
+                98.0
+            ],
+            "var_name": "msl"
+        }
+    },
+    "environment": {
+        "python_version": "3.14.4",
+        "os_platform": "Windows-11-10.0.26200-SP0",
+        "numpy_version": "2.5.1",
+        "scipy_version": "1.18.0",
+        "xarray_version": "2026.7.0",
+        "pandas_version": "3.0.3"
+    },
+    "random_generator_spec": {
+        "explicit_rng": "np.random.default_rng(42)",
+        "seed": 42,
+        "n_permutations": 1000
+    }
+}

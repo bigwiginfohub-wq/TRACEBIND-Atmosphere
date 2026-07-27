@@ -1,0 +1,43 @@
+# Section 3: Statistical Validation & Benchmarking Methodology
+
+## 3.1 Experimental Design & Synthetic Field Generation
+Synthetic baseline spatial fields ($N_{\text{base}}$) were generated using controlled Gaussian random field realizations. Experimental perturbations—including spatial resampling warp, local masking, and correlation-length variations—were applied to generate modified fields. 
+
+For each baseline–perturbed field pair, we measured the response of TRACEBIND ($\Delta R$), spatial autocorrelation ($\Delta M$), and auxiliary spatial moments:
+
+$$\mathbf{x} = \Big(\Delta M, \, \Delta V, \, \Delta G, \, \Delta S, \, \Delta K\Big)^\top$$
+
+where:
+* $\Delta R = R_{\text{perturbed}} - R_{\text{baseline}}$ is the observed TRACEBIND response,
+* $\Delta M = M_{\text{perturbed}} - M_{\text{baseline}}$ is the change in Moran's $I$,
+* $\Delta V$ is the variance change,
+* $\Delta G$ is the mean gradient magnitude change,
+* $\Delta S$ is the skewness change, and
+* $\Delta K$ is the kurtosis change.
+
+A full factorial layout was used to evaluate main effects and interaction terms across realization groups. All simulations and statistical analyses were implemented in Python (v3.11+) using `NumPy`, `SciPy`, `pandas`, `scikit-learn`, `statsmodels`, and `Matplotlib`. Random number generation utilized fixed, deterministic seeds as specified in the frozen benchmark configuration.
+
+## 3.2 Leakage-Free Grouped Cross-Validation
+Because multiple perturbation types were applied to each synthetic baseline field, standard random train/test splitting would introduce severe data leakage across folds. To ensure out-of-sample generalization across entirely unseen spatial geometries, model evaluation utilized an 8-fold **GroupKFold cross-validation strategy**, with baseline realization identifiers ($N_{\text{base}}$) defining the grouping structure.
+
+Out-of-sample predictive performance was evaluated across out-of-group splits using $R^2$:
+
+$$\text{CV } R^2 = 1 - \frac{\sum_{i} (y_i - \hat{y}_i)^2}{\sum_{i} (y_i - \bar{y})^2}$$
+
+The benchmark achieved an out-of-group performance of $\text{CV } R^2 = 0.9937 \pm 0.0021$, confirming that the fitted model generalizes across baseline realizations rather than memorizing localized field configurations.
+
+## 3.3 Feature Importance via Permutation Testing
+Feature importance was estimated non-parametrically using out-of-sample permutation testing ($n_{\text{repeats}} = 100$). Each predictor column within the validation split was individually shuffled while holding all other features constant. Importance was measured as the direct loss in out-of-sample $R^2$:
+
+$$\Delta R^2_j = R^2_{\text{baseline}} - R^2_{\text{permuted}(j)}$$
+
+where a performance drop $\Delta R^2_j > 1.0$ indicates severe structural degradation in model explanatory power.
+
+## 3.4 Phase Randomization & Statistical Mediation Analysis
+To test whether TRACEBIND responds to spatial organization beyond second-order spectral properties, surrogate data testing was conducted using phase-randomized field transformations ($N = 1000$). Statistical mediation analysis evaluated the direct effect ($c'$) and indirect path ($a \times b$) through Moran's $I$ ($\Delta M$).
+
+To account for skewness and non-normality in the indirect effect product, non-parametric bootstrapping ($B = 5,000$ iterations) was applied to calculate 95% confidence intervals. The resulting indirect effect interval spanned zero:
+
+$$\text{Point Estimate } (a \times b) = -0.000051, \quad 95\%\text{ CI } [-0.000245, \, 0.000145]$$
+
+Consequently, we make no claim of statistically supported mediation. Within the surrogate framework investigated, TRACEBIND exhibited a statistically significant response to phase-randomized perturbations. This response is consistent with responsiveness to aspects of spatial organization beyond second-order autocorrelation, though $\Delta M$ remains the dominant predictive feature (standardized $\beta \approx 0.99$).

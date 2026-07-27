@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "algorithm_id": "TRACEBIND-P5.0-FROZEN",
+    "timestamp_utc": "2026-07-25T14:14:51.033739Z",
+    "git_commit": "UNKNOWN_OR_NOT_A_GIT_REPO",
+    "audit_status": "PASSED"
+  },
+  "script_provenance_sha256": {
+    "16_generate_cohort_manifests.py": "376ff138ebe7d76a37a86500dfa7e37917e6448af518a9d5a567048e6fff6fae",
+    "17_download_expanded_cohort.py": "1db46b12a61423fab8b25c8720048b0522a44a24021a1b4de2a5003eeddcd050",
+    "18_validate_and_manifest_expanded_cohort.py": "4bb77f93d87dc2685dba44fb402ff50693794a79784f544b33eac8e730c506f4",
+    "tracebind_manifest.py": "1557a150cb2c859d91a60af688261493b7e83005498fd68b81a82195c98407c9"
+  },
+  "dataset": {
+    "storm": "hudhud",
+    "input_md5": "2a5fc9432251380643f9928d3290d330",
+    "time_steps": 96,
+    "grid_shape": "41x41",
+    "coordinate_ordering": {
+      "latitude": "Descending",
+      "longitude": "Ascending"
+    },
+    "bounding_box": {
+      "lat": "[12.0, 22.0]",
+      "lon": "[80.0, 90.0]"
+    },
+    "msl_summary": {
+      "units": "Pa",
+      "temporal_delta_pa": 2419.4375
+    }
+  }
+}

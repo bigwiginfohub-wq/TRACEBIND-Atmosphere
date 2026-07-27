@@ -1,0 +1,14 @@
+storm_id,basin,operational_agency,peak_category,vmax_kt,best_track_min_msl_hpa
+amphan,Bay of Bengal (NI),IMD,Super Cyclonic Storm,130,920
+fani,Bay of Bengal (NI),IMD,Extremely Severe Cyclonic Storm,115,932
+mocha,Bay of Bengal (NI),IMD,Extremely Severe Cyclonic Storm,150,918
+sidr,Bay of Bengal (NI),IMD,Extremely Severe Cyclonic Storm,115,944
+yaas,Bay of Bengal (NI),IMD,Very Severe Cyclonic Storm,75,970
+nargis,Bay of Bengal (NI),IMD,Very Severe Cyclonic Storm,90,962
+bulbul,Bay of Bengal (NI),IMD,Very Severe Cyclonic Storm,75,980
+gulab,Bay of Bengal (NI),IMD,Cyclonic Storm,45,992
+hudhud,Bay of Bengal (NI),IMD,Very Severe Cyclonic Storm,100,950
+kyarr,Arabian Sea (NI),IMD,Super Cyclonic Storm,130,922
+mekunu,Arabian Sea (NI),IMD,Extremely Severe Cyclonic Storm,95,960
+haiyan,Western Pacific (WP),JMA,Super Typhoon,125,895
+ida,North Atlantic (NA),NHC,Category 4 Hurricane,130,929

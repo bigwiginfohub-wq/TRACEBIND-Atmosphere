@@ -1,0 +1,7 @@
+Storm,Field_Used,GRIB_Level,MD5_Frame0,Temporal_Delta,Observed_GE,Null_GE_Mean,Cohens_d,p_value_left,Spatial_QC_Passed
+Amphan,msl,surface,04b1c5b2,2418.25,3.3254e+07,9.1239e+08,-81.52,0.001,True
+Fani,msl,surface,09d7771a,2450.06,1.8808e+07,8.5508e+08,-92.61,0.001,True
+Mocha,msl,surface,3b9863f7,2711.31,2.1437e+07,9.5571e+08,-75.88,0.001,True
+Yaas,msl,surface,77bb7b75,1358.94,1.3552e+07,1.0142e+09,-91.72,0.001,True
+Sidr,msl,surface,03aed4c5,1857.0,9.9987e+06,6.1667e+08,-90.69,0.001,True
+Nargis,msl,surface,0266d574,1465.06,8.2812e+06,5.2453e+08,-89.89,0.001,True

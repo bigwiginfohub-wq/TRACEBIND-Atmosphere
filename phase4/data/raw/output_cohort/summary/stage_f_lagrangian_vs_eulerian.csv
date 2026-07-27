@@ -1,0 +1,13 @@
+Storm,Metric,Lead_Eulerian_h,Lead_Lagrangian_h,Delta_Shift_h
+Amphan,gradient_energy,-1.0,0.0,1.0
+Amphan,tb_v2_intensity,22.0,0.0,-22.0
+Fani,gradient_energy,-86.0,-85.0,1.0
+Fani,tb_v2_intensity,-62.0,-85.0,-23.0
+Mocha,gradient_energy,-36.0,-41.0,-5.0
+Mocha,tb_v2_intensity,-36.0,-41.0,-5.0
+Yaas,gradient_energy,-64.0,-6.0,58.0
+Yaas,tb_v2_intensity,0.0,-6.0,-6.0
+Sidr,gradient_energy,-66.0,-64.0,2.0
+Sidr,tb_v2_intensity,-66.0,-64.0,2.0
+Nargis,gradient_energy,25.0,19.0,-6.0
+Nargis,tb_v2_intensity,-2.0,-2.0,0.0

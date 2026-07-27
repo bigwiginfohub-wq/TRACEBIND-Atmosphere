@@ -1,0 +1,118 @@
+"""
+00_inspect_dataset.py
+---------------------
+One-time dataset profiling and verification utility.
+Inspects NetCDF metadata, validates coordinate orientation, verifies physical units,
+and exports diagnostic spatial/histogram plots along with a text summary log.
+"""
+
+import xarray as xr
+import matplotlib.pyplot as plt
+from pathlib import Path
+
+def inspect_netcdf(file_path: Path):
+    if not file_path.exists():
+        raise FileNotFoundError(f"Target NetCDF file not found: {file_path.resolve()}")
+
+    ds = xr.open_dataset(file_path)
+    
+    # 1. Preferred Variable Lookup
+    preferred_vars = ["z", "gh", "geopotential", "msl", "mslp", "mean_sea_level_pressure"]
+    selected_var = None
+    for name in preferred_vars:
+        if name in ds.data_vars:
+            selected_var = name
+            break
+            
+    if selected_var is None:
+        raise RuntimeError(f"No supported atmospheric variable found in dataset. Available: {list(ds.data_vars)}")
+
+    # Resolve Coordinate Names
+    lat_key = [c for c in ["latitude", "lat"] if c in ds.coords or c in ds.dims][0]
+    lon_key = [c for c in ["longitude", "lon"] if c in ds.coords or c in ds.dims][0]
+    time_key = [c for c in ["time", "valid_time"] if c in ds.coords or c in ds.dims][0]
+
+    lats = ds[lat_key].values
+    lons = ds[lon_key].values
+    times = ds[time_key].values
+
+    # Construct Diagnostic Summary String
+    summary_lines = []
+    summary_lines.append("=" * 70)
+    summary_lines.append(f"DATASET PROFILING REPORT: {file_path.name}")
+    summary_lines.append("=" * 70)
+    summary_lines.append(f"\n[STRUCTURE & DIMENSIONS]")
+    summary_lines.append(f"Dimensions : {dict(ds.dims)}")
+    summary_lines.append(f"Data Vars  : {list(ds.data_vars.keys())}")
+    
+    summary_lines.append(f"\n[COORDINATE RANGES]")
+    summary_lines.append(f"Latitude   : {lats.min():.3f}° to {lats.max():.3f}° (Total: {len(lats)})")
+    if lats[0] > lats[-1]:
+        summary_lines.append("  └─ Latitude Ordering: Decreasing (North -> South) [ERA5 Standard]")
+    else:
+        summary_lines.append("  └─ Latitude Ordering: Increasing (South -> North)")
+
+    summary_lines.append(f"Longitude  : {lons.min():.3f}° to {lons.max():.3f}° (Total: {len(lons)})")
+    
+    summary_lines.append(f"\n[TIME COVERAGE]")
+    summary_lines.append(f"Start Time : {times[0]}")
+    summary_lines.append(f"End Time   : {times[-1]}")
+    summary_lines.append(f"Total Steps: {len(times)} frames")
+
+    summary_lines.append(f"\n[PRIMARY TARGET VARIABLE]")
+    summary_lines.append(f"Selected   : '{selected_var}'")
+    raw_units = ds[selected_var].attrs.get("units", "Unspecified")
+    summary_lines.append(f"Raw Units  : {raw_units}")
+
+    report_text = "\n".join(summary_lines)
+    print(report_text)
+
+    # 2. Save Text Profiling Report
+    summary_file = file_path.parent / "dataset_summary.txt"
+    with open(summary_file, "w") as f:
+        f.write(report_text + "\n\n" + str(ds))
+    print(f"\n[LOG] Summary written to: {summary_file.resolve()}")
+
+    # 3. Extract & Prepare First Frame
+    first_frame = ds[selected_var].isel({time_key: 0}).values
+    var_title = selected_var
+
+    # Explicit Metadata-Based Unit Conversion
+    if raw_units == "m**2 s**-2" or (selected_var in ["z", "geopotential"] and first_frame.mean() > 10000):
+        first_frame = first_frame / 9.80665
+        var_title = f"{selected_var} (Geopotential Height, m)"
+
+    # 4. Generate QA Diagnostic Spatial Plot (frame0.png)
+    plt.figure(figsize=(8, 6))
+    mesh = plt.pcolormesh(lons, lats, first_frame, cmap='viridis', shading='auto')
+    plt.colorbar(mesh, label=var_title)
+    plt.title(f"QA Validation - Spatial Frame 0 | {times[0]}", fontweight='bold')
+    plt.xlabel("Longitude (°E)")
+    plt.ylabel("Latitude (°N)")
+    plt.grid(True, linestyle='--', alpha=0.3)
+    plt.tight_layout()
+    
+    spatial_plot_path = file_path.parent / "frame0.png"
+    plt.savefig(spatial_plot_path, dpi=200)
+    plt.close()
+    print(f"[QA] Spatial diagnostic saved to: {spatial_plot_path.resolve()}")
+
+    # 5. Generate QA Value Histogram (frame0_histogram.png)
+    plt.figure(figsize=(7, 5))
+    valid_data = first_frame[~np.isnan(first_frame)].ravel() if 'np' in globals() else first_frame.ravel()
+    plt.hist(valid_data, bins=50, color='teal', edgecolor='black', alpha=0.7)
+    plt.title(f"QA Validation - Value Distribution (Frame 0)", fontweight='bold')
+    plt.xlabel(var_title)
+    plt.ylabel("Pixel Count")
+    plt.grid(True, linestyle='--', alpha=0.3)
+    plt.tight_layout()
+
+    hist_plot_path = file_path.parent / "frame0_histogram.png"
+    plt.savefig(hist_plot_path, dpi=200)
+    plt.close()
+    print(f"[QA] Value distribution histogram saved to: {hist_plot_path.resolve()}\n")
+
+if __name__ == "__main__":
+    import numpy as np  # Ensure numpy is imported for histogram array handling
+    target_nc = Path("era5_amphan_72h.nc")
+    inspect_netcdf(target_nc)

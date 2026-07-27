@@ -1,0 +1,16 @@
+{
+  "storm_name": "Cyclone Amphan",
+  "dataset": "ERA5 Reanalysis",
+  "window_size_degrees": 20.0,
+  "crop_cell_dimensions": [
+    80,
+    80
+  ],
+  "spatial_boundary_handling": "Strict Non-Periodic Boundary Matrix",
+  "metric_definitions_state": "FROZEN_STAGE_B",
+  "total_frames_processed": 96,
+  "python_version": "3.14.4",
+  "numpy_version": "2.5.1",
+  "xarray_version": "2026.7.0",
+  "execution_timestamp_utc": "2026-07-24T19:23:16.110445+00:00"
+}

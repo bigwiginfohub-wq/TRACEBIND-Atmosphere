@@ -1,0 +1,19 @@
+Storm,Reference_Event,Status,gradient_energy_lead_h,tb_v2_intensity_lead_h,tb_v2_cosine_lead_h,tb_v1_lead_h,morans_i_lead_h,spatial_entropy_lead_h
+Amphan,Min MSLP,Valid,1.0,-6.0,7.0,0.0,-34.0,36.0
+Amphan,Max Deepening,Valid,2.0,-5.0,8.0,1.0,-36.0,36.0
+Amphan,RI Onset,No RI Threshold Met,,,,,,
+Fani,Min MSLP,Valid,36.0,36.0,2.0,36.0,15.0,36.0
+Fani,Max Deepening,Valid,35.0,35.0,15.0,35.0,28.0,0.0
+Fani,RI Onset,Valid,36.0,36.0,16.0,36.0,29.0,1.0
+Mocha,Min MSLP,Valid,16.0,16.0,-4.0,16.0,19.0,32.0
+Mocha,Max Deepening,Valid,27.0,27.0,7.0,27.0,30.0,28.0
+Mocha,RI Onset,No RI Threshold Met,,,,,,
+Yaas,Min MSLP,Valid,35.0,35.0,-28.0,35.0,18.0,35.0
+Yaas,Max Deepening,Valid,23.0,-11.0,-18.0,-10.0,-11.0,32.0
+Yaas,RI Onset,Valid,24.0,-10.0,-17.0,-9.0,-10.0,33.0
+Sidr,Min MSLP,Valid,30.0,30.0,-29.0,30.0,-22.0,33.0
+Sidr,Max Deepening,Valid,36.0,36.0,-4.0,36.0,3.0,-4.0
+Sidr,RI Onset,No RI Threshold Met,,,,,,
+Nargis,Min MSLP,Valid,0.0,0.0,-26.0,0.0,0.0,0.0
+Nargis,Max Deepening,Valid,2.0,2.0,-24.0,2.0,2.0,2.0
+Nargis,RI Onset,No RI Threshold Met,,,,,,

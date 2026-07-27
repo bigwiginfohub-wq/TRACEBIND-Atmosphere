@@ -1,0 +1,7 @@
+Storm,Time_Steps,Peak_GE_Hour,Obs_Max_|dGE/dt|,Surr_Null_|dGE/dt|_Mean,Rate_Cohens_d,Trajectory_p_value,Precursor_Falsification_Passed
+Amphan,96,57,7.3016e+06,4.9183e+06,4.04,0.002,True
+Fani,96,15,1.8586e+06,2.8883e+06,-2.72,1.0,False
+Mocha,96,52,7.2600e+06,5.3196e+06,2.85,0.012,True
+Yaas,96,32,2.0670e+06,1.8043e+06,1.12,0.1238,False
+Sidr,96,57,1.1011e+06,1.6062e+06,-2.32,1.0,False
+Nargis,48,35,9.1174e+05,1.1813e+06,-1.6,0.984,False

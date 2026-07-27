@@ -1,0 +1,4 @@
+Subspace,TC_Median_Abs_Z,Ctrl_Median_Abs_Z,Cliffs_Delta
+"Tier 1: Phase Organization (GE, LE, C_orient)",20.62,18.15,0.111
+"Tier 2: Cyclone Geometry (A_radial, S_orient)",8.81,5.31,0.333
+Full 5D Architecture (Unsegmented),15.8,13.01,0.278
