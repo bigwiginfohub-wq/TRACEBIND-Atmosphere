@@ -1,0 +1,22 @@
+[
+  {
+    "system_id": "TC_2023_IDALIA",
+    "system_name": "Idalia",
+    "event_year": 2023,
+    "system_class": "TC",
+    "basin": "NI",
+    "bounding_box": [10.0, 40.0, -100.0, -70.0],
+    "analysis_time": "2023-08-29T12:00:00Z",
+    "storm_center_lat": 27.5,
+    "storm_center_lon": -84.5,
+    "min_pressure_hpa": 948.0,
+    "max_wind_kt": 110.0,
+    "era5_filename": "TC_2023_IDALIA.nc",
+    "notes": "Major TC in Gulf of Mexico prior to landfall.",
+    "status": {
+      "downloaded": false,
+      "qc_passed": false,
+      "processed": false
+    }
+  }
+]
