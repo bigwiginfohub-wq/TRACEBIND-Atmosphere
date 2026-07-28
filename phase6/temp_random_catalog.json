@@ -1,0 +1,116 @@
+[
+  {
+    "system_id": "CTRL_2023_PAC_01",
+    "ibtracs_sid": null,
+    "cohort_id": "G",
+    "cohort_name": "Quiescent Background Controls",
+    "system_name": "Quiet Pacific Subtropics",
+    "event_year": 2023,
+    "system_class": "RANDOM",
+    "subclass": "Open Ocean Background",
+    "basin": "EP",
+    "source_dataset": "ERA5",
+    "source_reference": "Synthetic_Control_Grid",
+    "analysis_time": "2023-07-15T12:00:00Z",
+    "center_lat": 15.0,
+    "center_lon": -140.0,
+    "min_pressure_hpa": 1013.2,
+    "max_wind_kt": 5.0,
+    "lifecycle_stage": "Non-Coherent Baseline",
+    "bounding_box": [
+      0.0,
+      30.0,
+      -155.0,
+      -125.0
+    ],
+    "era5_filename": "CTRL_2023_PAC_01.nc",
+    "sha256": null,
+    "status": {
+      "downloaded": false,
+      "qc_passed": false,
+      "processed": false
+    },
+    "control_provenance": {
+      "algorithm_version": "v1.0-subtropical-grid",
+      "exclusion_radius_km": 1000.0,
+      "land_mask_applied": true
+    },
+    "notes": "Unorganized background fields exhibit zero systematically aligned phase structures."
+  },
+  {
+    "system_id": "CTRL_2023_ATL_01",
+    "ibtracs_sid": null,
+    "cohort_id": "G",
+    "cohort_name": "Quiescent Background Controls",
+    "system_name": "Quiet Atlantic Subtropics",
+    "event_year": 2023,
+    "system_class": "RANDOM",
+    "subclass": "Open Ocean Background",
+    "basin": "NA",
+    "source_dataset": "ERA5",
+    "source_reference": "Synthetic_Control_Grid",
+    "analysis_time": "2023-07-15T12:00:00Z",
+    "center_lat": 25.0,
+    "center_lon": -45.0,
+    "min_pressure_hpa": 1013.2,
+    "max_wind_kt": 5.0,
+    "lifecycle_stage": "Non-Coherent Baseline",
+    "bounding_box": [
+      10.0,
+      40.0,
+      -60.0,
+      -30.0
+    ],
+    "era5_filename": "CTRL_2023_ATL_01.nc",
+    "sha256": null,
+    "status": {
+      "downloaded": false,
+      "qc_passed": false,
+      "processed": false
+    },
+    "control_provenance": {
+      "algorithm_version": "v1.0-subtropical-grid",
+      "exclusion_radius_km": 1000.0,
+      "land_mask_applied": true
+    },
+    "notes": "Unorganized background fields exhibit zero systematically aligned phase structures."
+  },
+  {
+    "system_id": "CTRL_2023_IND_01",
+    "ibtracs_sid": null,
+    "cohort_id": "G",
+    "cohort_name": "Quiescent Background Controls",
+    "system_name": "Quiet Indian Subtropics",
+    "event_year": 2023,
+    "system_class": "RANDOM",
+    "subclass": "Open Ocean Background",
+    "basin": "SI",
+    "source_dataset": "ERA5",
+    "source_reference": "Synthetic_Control_Grid",
+    "analysis_time": "2023-07-15T12:00:00Z",
+    "center_lat": -20.0,
+    "center_lon": 80.0,
+    "min_pressure_hpa": 1013.2,
+    "max_wind_kt": 5.0,
+    "lifecycle_stage": "Non-Coherent Baseline",
+    "bounding_box": [
+      -35.0,
+      -5.0,
+      65.0,
+      95.0
+    ],
+    "era5_filename": "CTRL_2023_IND_01.nc",
+    "sha256": null,
+    "status": {
+      "downloaded": false,
+      "qc_passed": false,
+      "processed": false
+    },
+    "control_provenance": {
+      "algorithm_version": "v1.0-subtropical-grid",
+      "exclusion_radius_km": 1000.0,
+      "land_mask_applied": true
+    },
+    "notes": "Unorganized background fields exhibit zero systematically aligned phase structures."
+  }
+]

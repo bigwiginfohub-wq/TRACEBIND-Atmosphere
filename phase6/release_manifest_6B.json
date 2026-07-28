@@ -1,0 +1,11 @@
+{
+  "release_tag": "TRACEBIND-v1.0-Phase6B",
+  "frozen_utc": "2026-07-28T00:15:00Z",
+  "pipeline_phase": "6B_Data_Acquisition_Infrastructure",
+  "catalog_lock_sha256": "<catalog.lock hash>",
+  "schema_version": "1.0",
+  "environment": {
+    "python_version": "3.11",
+    "cdsapi_version": "0.7.0"
+  }
+}

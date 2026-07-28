@@ -1,0 +1,2 @@
+system_id,system_name,system_class,basin,event_year,analysis_time,downloaded,qc_passed,processed
+TC_2023_IDALIA,Idalia,TC,NI,2023,2023-08-29T12:00:00Z,False,False,False

@@ -1,0 +1,58 @@
+[
+  {
+    "metric": "circulation_250km_mean",
+    "p_fdr_bh": 0.40031491560114185,
+    "cliffs_delta": 0.25,
+    "effect_class": "Small",
+    "ci95_excludes_zero": false,
+    "evaluation": "No statistically supported difference under current dataset"
+  },
+  {
+    "metric": "compactness_ratio_mean",
+    "p_fdr_bh": 0.939015708064313,
+    "cliffs_delta": -0.013157894736842105,
+    "effect_class": "Negligible",
+    "ci95_excludes_zero": false,
+    "evaluation": "No statistically supported difference under current dataset"
+  },
+  {
+    "metric": "asymmetry_index_mean",
+    "p_fdr_bh": 0.939015708064313,
+    "cliffs_delta": -0.02631578947368421,
+    "effect_class": "Negligible",
+    "ci95_excludes_zero": false,
+    "evaluation": "No statistically supported difference under current dataset"
+  },
+  {
+    "metric": "filamentation_fraction_mean",
+    "p_fdr_bh": 0.7153442944323315,
+    "cliffs_delta": -0.16228070175438597,
+    "effect_class": "Small",
+    "ci95_excludes_zero": false,
+    "evaluation": "No statistically supported difference under current dataset"
+  },
+  {
+    "metric": "coherence_index_mean",
+    "p_fdr_bh": 0.40031491560114185,
+    "cliffs_delta": 0.2894736842105263,
+    "effect_class": "Small",
+    "ci95_excludes_zero": false,
+    "evaluation": "No statistically supported difference under current dataset"
+  },
+  {
+    "metric": "boundary_entropy_bits_mean",
+    "p_fdr_bh": 0.939015708064313,
+    "cliffs_delta": 0.05921052631578947,
+    "effect_class": "Negligible",
+    "ci95_excludes_zero": false,
+    "evaluation": "No statistically supported difference under current dataset"
+  },
+  {
+    "metric": "boundary_sharpness_mean",
+    "p_fdr_bh": 0.939015708064313,
+    "cliffs_delta": -0.03508771929824561,
+    "effect_class": "Negligible",
+    "ci95_excludes_zero": false,
+    "evaluation": "No statistically supported difference under current dataset"
+  }
+]

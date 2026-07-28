@@ -1,0 +1,22 @@
+{
+  "analysis_phase": "6C.1",
+  "phase_description": "Dataset Verification & Scientific Acceptance Test",
+  "input_catalog_sha256": "<catalog.json SHA-256>",
+  "target_variables": [
+    "u10", 
+    "v10", 
+    "msl", 
+    "u", 
+    "v", 
+    "vo"
+  ],
+  "acceptance_criteria": {
+    "temporal_regularity": "1h",
+    "grid_spacing_deg": 0.25,
+    "coordinate_orientation": {
+      "latitude": "descending (+90 to -90 or North-to-South)",
+      "longitude": "ascending (-180 to 180 or 0 to 360)"
+    },
+    "fill_values_allowed": false
+  }
+}

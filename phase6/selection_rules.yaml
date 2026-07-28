@@ -1,0 +1,47 @@
+schema_version: "1.0.0"
+bounding_box_padding_deg: 15.0
+target_samples_per_cohort: 25
+
+cohort_definitions:
+  COHORT_A:
+    cohort_id: "A"
+    name: "Strong Tropical Cyclones"
+    default_lifecycle_stage: "Observed Peak Intensity"
+    selection_constraints:
+      system_class: "TC"
+      subclass: "Major Hurricane / Typhoon"
+      usa_wind_min_kt: 96.0
+    hypothesis: "Coherent vortex kinematics manifest strong helical phase alignment."
+
+  COHORT_B:
+    cohort_id: "B"
+    name: "Weak Tropical Cyclones / Depressions"
+    default_lifecycle_stage: "Initial Development / Weak Phase"
+    selection_constraints:
+      system_class: "TC"
+      subclass: "Tropical Depression / Weak Storm"
+      usa_wind_max_kt: 34.0
+    hypothesis: "Weak or organizing vortices show localized, transient phase coherence."
+
+  COHORT_D:
+    cohort_id: "D"
+    name: "Monsoon Low Pressure Systems"
+    default_lifecycle_stage: "Active Monsoon Vortex"
+    selection_constraints:
+      system_class: "MONSOON"
+      subclass: "Monsoon Depression"
+      basin: "NI"
+    hypothesis: "Broad-scale moist convective vortices display distinct kinematic boundaries."
+
+  COHORT_G:
+    cohort_id: "G"
+    name: "Quiescent Background Controls"
+    default_lifecycle_stage: "Non-Coherent Baseline"
+    selection_constraints:
+      system_class: "RANDOM"
+      subclass: "Open Ocean Background"
+    control_generation:
+      algorithm_version: "v1.0-subtropical-grid"
+      exclusion_radius_km: 1000.0
+      land_mask_applied: true
+    hypothesis: "Unorganized background fields exhibit zero systematically aligned phase structures."

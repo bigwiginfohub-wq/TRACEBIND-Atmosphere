@@ -1,0 +1,1150 @@
+{
+    "manifest_version": "6D.0",
+    "feature_version": "6C.2",
+    "created_utc": "2026-07-27T21:26:10.552992+00:00",
+    "system_count": 67,
+    "generator": "build_manifest_6d0.py",
+    "generator_version": "1.0.0",
+    "catalog_sha256": "3250874f52d8dec763fe92da103b31d4384fba3fbfee1010005378e1ba02ab54",
+    "systems": [
+        {
+            "system_id": "CTRL_2023_ATL_01",
+            "cohort_id": "G",
+            "cohort_name": "Quiescent Background Controls",
+            "system_class": "RANDOM",
+            "feature_file": "CTRL_2023_ATL_01_features.nc",
+            "feature_sha256": "745b27488e0f38cdceaec6e5ff436bdff91e6ec454db606c9cd546f720555372",
+            "raw_artifact_sha256": "281d99fa284ce224914b4ed929e7d648a7817325fc1c697cbc28c5ac5061b38c",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 16.57,
+                "pressure_min_hpa": 1013.2,
+                "max_vorticity_s1": 0.00027243,
+                "min_okubo_weiss_s2": -7.4004e-08
+            }
+        },
+        {
+            "system_id": "CTRL_2023_IND_01",
+            "cohort_id": "G",
+            "cohort_name": "Quiescent Background Controls",
+            "system_class": "RANDOM",
+            "feature_file": "CTRL_2023_IND_01_features.nc",
+            "feature_sha256": "21766c81ec615ae92eb67960fef4d661aae9f0b8189eef812f0238a307942f8f",
+            "raw_artifact_sha256": "83ae2ada9d4ebcdd041a72fd75328ba373d8548f2e60f243f6b6246ff73e8df5",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 13.32,
+                "pressure_min_hpa": 1013.2,
+                "max_vorticity_s1": 4.9572e-05,
+                "min_okubo_weiss_s2": -7.0313e-09
+            }
+        },
+        {
+            "system_id": "CTRL_2023_PAC_01",
+            "cohort_id": "G",
+            "cohort_name": "Quiescent Background Controls",
+            "system_class": "RANDOM",
+            "feature_file": "CTRL_2023_PAC_01_features.nc",
+            "feature_sha256": "30f99dda5dac182bc458142de61351b3760fd58239c9d8d72329bc218dd7acad",
+            "raw_artifact_sha256": "1fa57b1f712a2a16c85285f4b0f1695461da9a96ffe9e920cd1ee4e3fd317085",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 22.28,
+                "pressure_min_hpa": 1013.2,
+                "max_vorticity_s1": 0.00083076,
+                "min_okubo_weiss_s2": -6.5924e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023036S12117",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023036S12117_features.nc",
+            "feature_sha256": "aff83400fdbfe388428750e40a25080e50e3f8d9ac6e70f408fc1140415c4f68",
+            "raw_artifact_sha256": "8a955c5c0113ad790e2dac10d20c37ea7d58c750862449f87f327661197a8a99",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 26.47,
+                "pressure_min_hpa": 926.0,
+                "max_vorticity_s1": 0.00020042,
+                "min_okubo_weiss_s2": -1.2587e-06
+            }
+        },
+        {
+            "system_id": "TC_2023_2023096S07135",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023096S07135_features.nc",
+            "feature_sha256": "e204543fbc820c3ee726083805e5995c6dd449b00835020cf0173cb35f89e1a8",
+            "raw_artifact_sha256": "7e5628ea43396904127059338a6c87da8222bfbd97ad2d35d86a3f53eb70e695",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 24.16,
+                "pressure_min_hpa": 920.0,
+                "max_vorticity_s1": 0.00011806,
+                "min_okubo_weiss_s2": -8.5088e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023129N08091",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023129N08091_features.nc",
+            "feature_sha256": "a49375676a6c8a39a5141390b5de0e784927036c53b6c7e9d7f6b11f19b726dd",
+            "raw_artifact_sha256": "1efcb225571645df915c121665d8017e2b6078bd414fc8b5798096c3109ac2e7",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 33.06,
+                "pressure_min_hpa": 908.0,
+                "max_vorticity_s1": 0.0012341,
+                "min_okubo_weiss_s2": -1.511e-06
+            }
+        },
+        {
+            "system_id": "TC_2023_2023138N05151",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023138N05151_features.nc",
+            "feature_sha256": "0801087f0c43d163bebde878f963c99efa500b3ffc73059f9bc2d732d1ded169",
+            "raw_artifact_sha256": "5b9c44d8b3f3b80f17b833516f148219761c0a66658a3094279908db64078049",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 32.48,
+                "pressure_min_hpa": 891.0,
+                "max_vorticity_s1": 0.0012283,
+                "min_okubo_weiss_s2": -1.5068e-06
+            }
+        },
+        {
+            "system_id": "TC_2023_2023156N10067",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2023_2023156N10067_features.nc",
+            "feature_sha256": "6181a468ac160dce0be1582b56588ac22734bd1591ab2789c36277aa43493d12",
+            "raw_artifact_sha256": "620ebad0db93adab476b9e532d105ebd3306142c59765462d746a2bebea6c5cb",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 25.74,
+                "pressure_min_hpa": 944.0,
+                "max_vorticity_s1": 0.00092028,
+                "min_okubo_weiss_s2": -8.4557e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023160N20092",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2023_2023160N20092_features.nc",
+            "feature_sha256": "842a1f9c1977a95782fd3b480458e06750ce4103cceab9f6b845e403c9b2cf11",
+            "raw_artifact_sha256": "8ae685b8fd3507cf9c16cfd44bb631fb8c4729789ad6bf5e4da131a47e7c2e0c",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 13.14,
+                "pressure_min_hpa": 991.0,
+                "max_vorticity_s1": 0.00024772,
+                "min_okubo_weiss_s2": -5.7372e-08
+            }
+        },
+        {
+            "system_id": "TC_2023_2023212N19090",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2023_2023212N19090_features.nc",
+            "feature_sha256": "bd6df7f9757ff2ff5e185b0c5c329d544d5167685e153ee076d533989964cd30",
+            "raw_artifact_sha256": "6b1b6f25e8435f18f3400b85a856880840e72ca0895024f00f5f9138a1dcba2f",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.39,
+                "pressure_min_hpa": 988.0,
+                "max_vorticity_s1": 0.00030393,
+                "min_okubo_weiss_s2": -8.5129e-08
+            }
+        },
+        {
+            "system_id": "TC_2023_2023234N18128",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023234N18128_features.nc",
+            "feature_sha256": "b2ee255c42f2758096220b21a3f7dc75f6be399b58c0ea9fbc6c17999ecaea63",
+            "raw_artifact_sha256": "a24d30b57f578ca7647fb2da65283469a3a23284a9f8bc0df0c6d5a53d651ede",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 22.35,
+                "pressure_min_hpa": 917.0,
+                "max_vorticity_s1": 0.00095823,
+                "min_okubo_weiss_s2": -9.1699e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023248N12257",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023248N12257_features.nc",
+            "feature_sha256": "c39e2e32578b927547b71e65fc195c7892464bc7df8784e1ac913623a4373eac",
+            "raw_artifact_sha256": "310d5c8446262f0397a69474087cf09deacc0179ebbe3be1d1086134807da1b8",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 22.3,
+                "pressure_min_hpa": 926.0,
+                "max_vorticity_s1": 0.00065301,
+                "min_okubo_weiss_s2": -4.0836e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023249N12320",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023249N12320_features.nc",
+            "feature_sha256": "a17ddb99e2233042a8294ceca1167822c0f1f2815e07c47b428515e305da748b",
+            "raw_artifact_sha256": "852cfb56827d88c4b66198b2855fdd92bcaeb8a551f43f2c1f18a6319263fb33",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 23.41,
+                "pressure_min_hpa": 926.0,
+                "max_vorticity_s1": 0.00074363,
+                "min_okubo_weiss_s2": -5.3514e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023279N08157",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023279N08157_features.nc",
+            "feature_sha256": "7bbdc78b8f8fee718595afd6af566f98a82369170c3c9854aa7e979348287c4c",
+            "raw_artifact_sha256": "05fea7947af213dfb7f3a351b03621c9bba9757219076307dbb4d404fd443d1d",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 25.78,
+                "pressure_min_hpa": 897.0,
+                "max_vorticity_s1": 0.00080946,
+                "min_okubo_weiss_s2": -6.4761e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023292N11063",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2023_2023292N11063_features.nc",
+            "feature_sha256": "248f74d416526dfd3280455becd7b74266fc6b8552e6e8faa9a6ce9cba95a477",
+            "raw_artifact_sha256": "1ff9708a9a246b91708468c6ebd0fee3e680a16d5ab45d5d6a1aadba84d60280",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 21.09,
+                "pressure_min_hpa": 960.0,
+                "max_vorticity_s1": 0.00073688,
+                "min_okubo_weiss_s2": -5.4094e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023293N12089",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2023_2023293N12089_features.nc",
+            "feature_sha256": "2a917bb880dce2d4b03c10711bd9b3670ee69cde360692f75b20eb98f3582626",
+            "raw_artifact_sha256": "58708816b6dd04f67995286757367b496ea04e5055b438dfdceb8d1b2432a875",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 14.34,
+                "pressure_min_hpa": 970.0,
+                "max_vorticity_s1": 0.00048322,
+                "min_okubo_weiss_s2": -2.2643e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023294N09264",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2023_2023294N09264_features.nc",
+            "feature_sha256": "e46ee86cd6f84765ae1bedffb9854381b9a1228e7c0a7a65c6cc15be0860dc83",
+            "raw_artifact_sha256": "6e1d28876d962b60aee6e33d6a5fb80aa92596755683a614bb5d9578def4b544",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.73,
+                "pressure_min_hpa": 924.0,
+                "max_vorticity_s1": 0.00074984,
+                "min_okubo_weiss_s2": -5.4971e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023317N10094",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2023_2023317N10094_features.nc",
+            "feature_sha256": "3b6481ada607d8b6ff33323b6b34f21e17746c16b2222ad1c2be87e4920bcfdc",
+            "raw_artifact_sha256": "2b64c69ebc45c38cd399f4ae122f2e5c21d7af077cbd17300d44e9cf7cd235f1",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.92,
+                "pressure_min_hpa": 995.0,
+                "max_vorticity_s1": 0.00039734,
+                "min_okubo_weiss_s2": -1.4521e-07
+            }
+        },
+        {
+            "system_id": "TC_2023_2023334N08088",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2023_2023334N08088_features.nc",
+            "feature_sha256": "93de4d3930ddc17c55ef70eb590d451fb91108eec890aa3763a500b2c543e5dc",
+            "raw_artifact_sha256": "582b4a54286ca9564fbee4c8c6d1330aa945cf99e655efc42014727dbf370093",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 20.85,
+                "pressure_min_hpa": 985.0,
+                "max_vorticity_s1": 0.00067171,
+                "min_okubo_weiss_s2": -4.5057e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024044S14066",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024044S14066_features.nc",
+            "feature_sha256": "4427aba2cdbd8bdaa5f94f6c81ae7bc1a46146770d26791846806e7f67a8b04b",
+            "raw_artifact_sha256": "6f2fa88203e546de8349b6f3b147a8bf536f44eb5b0a5d8a0f327cbdda42d429",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 23.17,
+                "pressure_min_hpa": 923.0,
+                "max_vorticity_s1": 7.5198e-05,
+                "min_okubo_weiss_s2": -6.0253e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024145N14087",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2024_2024145N14087_features.nc",
+            "feature_sha256": "8506d8c4bbc883704b4f1832e8bb39461bad9a5b8dbb7b0b5562a895e347c020",
+            "raw_artifact_sha256": "fcc45efa6df197f66c392b8ceaa87a946f2f00385c7f617a15ae0efeabf7fa33",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 20.92,
+                "pressure_min_hpa": 977.0,
+                "max_vorticity_s1": 0.00059449,
+                "min_okubo_weiss_s2": -3.3662e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024181N09320",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024181N09320_features.nc",
+            "feature_sha256": "12f9008345349e21686caede412ce7d99d1ad0704d943677adf8bc967aab87a3",
+            "raw_artifact_sha256": "2ffaabca56430d7d694fda25a6aaf82041da0ab9a032ddbf5fae08e08561f431",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 23.59,
+                "pressure_min_hpa": 932.0,
+                "max_vorticity_s1": 0.00089687,
+                "min_okubo_weiss_s2": -7.8833e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024238N25077",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2024_2024238N25077_features.nc",
+            "feature_sha256": "7f01fc4a7e1196f2593da33ec93bcf3bdc6452659eaf11a287b5331a59e5873f",
+            "raw_artifact_sha256": "027e8a0e3e05cf314dd737542da49969961442cc1c9c62b43626222200627555",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 16.17,
+                "pressure_min_hpa": 992.0,
+                "max_vorticity_s1": 0.0005229,
+                "min_okubo_weiss_s2": -2.6508e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024244N09137",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024244N09137_features.nc",
+            "feature_sha256": "5b66adf4244bf278a167506f8b063b112591b0751ae28b6cb95580a32f81d0ae",
+            "raw_artifact_sha256": "2e50f9510d3e623eeebf87cc6b2600974541978a8247efcc0f2afd2b933b9ef7",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 25.75,
+                "pressure_min_hpa": 907.0,
+                "max_vorticity_s1": 0.00079679,
+                "min_okubo_weiss_s2": -6.3058e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024270N24128",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024270N24128_features.nc",
+            "feature_sha256": "26bae7d8edc2d42ab2aaff410a20dfe55fa0dcaffd40fa390d850ceaca0d23f7",
+            "raw_artifact_sha256": "44f5093ed7bf47f6c414a46039a89525f4fe2a7660ded67c7ea8ad70ed3ad65e",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 26.65,
+                "pressure_min_hpa": 922.0,
+                "max_vorticity_s1": 0.00097415,
+                "min_okubo_weiss_s2": -9.3601e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024279N21265",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024279N21265_features.nc",
+            "feature_sha256": "a5dcd5bc77da8acfcaca7e0ea2ef6a5772158303e1fb6e350a9098309ceafb81",
+            "raw_artifact_sha256": "586ce28aef29cf99a34f538e36385aeeaff5e41cb64ee4d20cbf74e4380f8a07",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 20.17,
+                "pressure_min_hpa": 895.0,
+                "max_vorticity_s1": 0.0006538,
+                "min_okubo_weiss_s2": -4.2372e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024295N15092",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2024_2024295N15092_features.nc",
+            "feature_sha256": "4bb325b73e5d3844fa0f89488415081bb1cd45f02bea521b557b9672d097fe4a",
+            "raw_artifact_sha256": "ae3a75bf96118e20550faa10a37f8159e1be5c6f073043a99cb1be30ab460a44",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 18.64,
+                "pressure_min_hpa": 985.0,
+                "max_vorticity_s1": 0.00063206,
+                "min_okubo_weiss_s2": -3.4674e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024296N13260",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024296N13260_features.nc",
+            "feature_sha256": "9ffe4f037723e28674ca4f402c42bd07dd7276493d2673b1131a19427455716b",
+            "raw_artifact_sha256": "3ee999a2e79d283a5e437276d430ac56517dafb1afc57763a4b84585c07a346a",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 24.8,
+                "pressure_min_hpa": 926.0,
+                "max_vorticity_s1": 0.0010453,
+                "min_okubo_weiss_s2": -1.0863e-06
+            }
+        },
+        {
+            "system_id": "TC_2024_2024298N13150",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024298N13150_features.nc",
+            "feature_sha256": "871fd3abb88a86da02f1a19a8476efa4734da2bec669417d8896dc1a7e4b8547",
+            "raw_artifact_sha256": "f0cded9b7b5a4188ba9add344f086f7e18def343194b8dfc66c05a40f9268b0d",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 37.42,
+                "pressure_min_hpa": 917.0,
+                "max_vorticity_s1": 0.0010767,
+                "min_okubo_weiss_s2": -1.1549e-06
+            }
+        },
+        {
+            "system_id": "TC_2024_2024313N10169",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024313N10169_features.nc",
+            "feature_sha256": "8915f9b905deb3e04ccb50d659eda124491f66b6bf8c0975b76d3303ebed2fa3",
+            "raw_artifact_sha256": "b4f3b151cd8a8870c194f4683340fde0b584c14cfeee0738b122f01ca3d4d0a1",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 25.65,
+                "pressure_min_hpa": 924.0,
+                "max_vorticity_s1": 0.00099754,
+                "min_okubo_weiss_s2": -9.9267e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024319N16282",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2024_2024319N16282_features.nc",
+            "feature_sha256": "f576ae91225f737878a574bb0c3d332261be989e9893f7565c892450525e7cc3",
+            "raw_artifact_sha256": "11021016c6d388959161ef121b5b41465e6556f255cc8b0f366e4b4231c2cc84",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 12.88,
+                "pressure_min_hpa": 1001.0,
+                "max_vorticity_s1": 0.00036633,
+                "min_okubo_weiss_s2": -1.2102e-07
+            }
+        },
+        {
+            "system_id": "TC_2024_2024329N04089",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2024_2024329N04089_features.nc",
+            "feature_sha256": "af6080f95c48a04604ec300e3346879f7dc65cad13933d3aa37b2549f4dbda2b",
+            "raw_artifact_sha256": "785af64b235093cb69b9ace422b49e78bd7d8971e7a72c96b3ad819d807697be",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.11,
+                "pressure_min_hpa": 991.0,
+                "max_vorticity_s1": 0.00058123,
+                "min_okubo_weiss_s2": -3.1326e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025064S12067",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025064S12067_features.nc",
+            "feature_sha256": "910bf5072a1c82d3b812da589c22ff0f4f2263d2b4b7f757b3e3c8deedebe846",
+            "raw_artifact_sha256": "7a95255d4ec53f1004d3c1b42672a74bf8e56f512c2c612582464ccbe006a585",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 19.03,
+                "pressure_min_hpa": 1000.0,
+                "max_vorticity_s1": 0.00018195,
+                "min_okubo_weiss_s2": -1.0712e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025100S09132",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025100S09132_features.nc",
+            "feature_sha256": "02efb0a6128949e9d751042f4b96feb440efec5570d93f8c325693e90055ff25",
+            "raw_artifact_sha256": "68fb02c1067f5dd2388d0ee3bf2b21ef51d1681c032d251ee3f70810bf0318e3",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 16.64,
+                "pressure_min_hpa": 919.0,
+                "max_vorticity_s1": 0.00014013,
+                "min_okubo_weiss_s2": -2.8037e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025161N15114",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025161N15114_features.nc",
+            "feature_sha256": "fb28751be25ab47a2279aab7fd66e2b31582ef4989250f763ff2b6dd29ed57fb",
+            "raw_artifact_sha256": "271ffe38138cb56a1c44069d29366aecf98556c0a9199fafc8f90767b8625bc4",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 17.7,
+                "pressure_min_hpa": 992.0,
+                "max_vorticity_s1": 0.00025717,
+                "min_okubo_weiss_s2": -6.3768e-08
+            }
+        },
+        {
+            "system_id": "TC_2025_2025203N20124",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025203N20124_features.nc",
+            "feature_sha256": "8668d4d8ed2b6aa8002b1c405e288c55ec93fc19b7d42f69482a2b8d64196b70",
+            "raw_artifact_sha256": "1e18a63a436f18069f2e9966119a81aaaca953a15d470da17387b7997dc1f8f3",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 17.58,
+                "pressure_min_hpa": 988.0,
+                "max_vorticity_s1": 0.00035682,
+                "min_okubo_weiss_s2": -1.2079e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025223N17337",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025223N17337_features.nc",
+            "feature_sha256": "c895cd6abeab4260f8a9f4bb9d54479389fe4b9e9fe451e534752841089388ab",
+            "raw_artifact_sha256": "7e476d2ba1230e8c49126cc71d8c6a4c1ec2d76fc88baba25fa3aa5b677e64f8",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 24.16,
+                "pressure_min_hpa": 913.0,
+                "max_vorticity_s1": 0.00063621,
+                "min_okubo_weiss_s2": -3.9249e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025233N15126",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025233N15126_features.nc",
+            "feature_sha256": "f0adc5106a3134440eba38424b9aaf19d95af8320f08f428460a0afb02c7e726",
+            "raw_artifact_sha256": "39e964d8c82e63bb010a7336ab3456e6b0b00b532220436b288502fecb11fb71",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.93,
+                "pressure_min_hpa": 1001.0,
+                "max_vorticity_s1": 0.00077261,
+                "min_okubo_weiss_s2": -5.1658e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025240N15117",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025240N15117_features.nc",
+            "feature_sha256": "b7ca784c57a2064f233edaae13fdb24770158cc2c2c86a18084c23c8ebab0e3b",
+            "raw_artifact_sha256": "d2d22034a95d04b6e29ea415fe660dc9e7a084bb6965f2ad26beba03aa402d64",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 13.69,
+                "pressure_min_hpa": 996.0,
+                "max_vorticity_s1": 0.00037209,
+                "min_okubo_weiss_s2": -1.17e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025248N18120",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025248N18120_features.nc",
+            "feature_sha256": "828d723571598fcb7377e31d1af8ff9bfd5b2bf116485622126f058cdaa6b3d1",
+            "raw_artifact_sha256": "8790b23d58a55a5b1e133c61e3fd8a0fcf198ad0630830bae5554dee34dcf142",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 12.92,
+                "pressure_min_hpa": 1000.0,
+                "max_vorticity_s1": 0.00033157,
+                "min_okubo_weiss_s2": -1.0152e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025259N13126",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025259N13126_features.nc",
+            "feature_sha256": "006ff45ec783273ea912637b15c9e461a531c61c630f9dc01da93fdaee1c1ca4",
+            "raw_artifact_sha256": "d5707f88b52fc99027ca1eb6a03e50791f239b763c490048bca5505f558d2eb8",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 16.77,
+                "pressure_min_hpa": 999.0,
+                "max_vorticity_s1": 0.00035878,
+                "min_okubo_weiss_s2": -8.1195e-08
+            }
+        },
+        {
+            "system_id": "TC_2025_2025260N13138",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025260N13138_features.nc",
+            "feature_sha256": "a3c60b49db6eb99c3fb9d3708db3a72762c90129c5f7a0f99b6450a44aa59504",
+            "raw_artifact_sha256": "511725f3d2327bc624f9bed4f712207395bd3491261e89a05f2c1299f33cb48f",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 33.0,
+                "pressure_min_hpa": 910.0,
+                "max_vorticity_s1": 0.00099035,
+                "min_okubo_weiss_s2": -9.6429e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025266N11137",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025266N11137_features.nc",
+            "feature_sha256": "0c7464dccd8b1d521169885851783ce3f90d9fb32f5442ed50842e42d47eb66a",
+            "raw_artifact_sha256": "9b55c4edcabc92f449e24bf4ffb9fae69863fcc35cf5c475c9cd770f0807310e",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 16.37,
+                "pressure_min_hpa": 1000.0,
+                "max_vorticity_s1": 0.00043563,
+                "min_okubo_weiss_s2": -1.7916e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025268N19306",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025268N19306_features.nc",
+            "feature_sha256": "abae394d153ea85810804c7aaa87c51a6c88044fa548137e51431df664240a22",
+            "raw_artifact_sha256": "fe6c31bc33668d10396e15bdc2c034706be9bf3e700970a9f4079f8a6fae3ff8",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 25.01,
+                "pressure_min_hpa": 918.0,
+                "max_vorticity_s1": 0.00091258,
+                "min_okubo_weiss_s2": -8.2339e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025274N16087",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2025_2025274N16087_features.nc",
+            "feature_sha256": "6c9a48426d9801f46f68b47c6dce15b6989ab746ca8c35a5c89b39ac2d6e0272",
+            "raw_artifact_sha256": "e876b05ed9e14c8a3645e19afe77873860d618beea8a66c1d13729d37fbd18bb",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.73,
+                "pressure_min_hpa": 995.0,
+                "max_vorticity_s1": 0.00028196,
+                "min_okubo_weiss_s2": -7.8831e-08
+            }
+        },
+        {
+            "system_id": "TC_2025_2025276N22067",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2025_2025276N22067_features.nc",
+            "feature_sha256": "f2051bcb36df98872f827cfc6bd564f062ec283183f6c3a57f221ca20fe20e2f",
+            "raw_artifact_sha256": "3c20c4bac373d1c2ecab484f32c182a26d9d07e40581846975f1822017178e72",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 19.82,
+                "pressure_min_hpa": 976.0,
+                "max_vorticity_s1": 0.00071348,
+                "min_okubo_weiss_s2": -4.7831e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025281N38324",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025281N38324_features.nc",
+            "feature_sha256": "4cfb7a608f6db59fd5a9e2e9360d3708e207f4171b1cf9d9945103dce3f601b0",
+            "raw_artifact_sha256": "94bb7af2f6bcddfece09eaa711425a6959f30943ea25beb0edfd0bc77cd64919",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 22.6,
+                "pressure_min_hpa": 1004.0,
+                "max_vorticity_s1": 0.00069688,
+                "min_okubo_weiss_s2": -1.0403e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025282N16261",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025282N16261_features.nc",
+            "feature_sha256": "d0b41f9fc89b0f8fa29db021c5683a444ec2f547d36259a1c39dbc63e28edfb3",
+            "raw_artifact_sha256": "1bcaa7763e5d636d53d62c4e50de764e0f64a7a3eae882500fc7cf17d0071780",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 13.86,
+                "pressure_min_hpa": 1004.0,
+                "max_vorticity_s1": 0.00049011,
+                "min_okubo_weiss_s2": -2.2917e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025289N13140",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025289N13140_features.nc",
+            "feature_sha256": "4a4052ed9eec3b8d7c1bd3f822868c1f700aa1b79f63d8056d1f5603cdcd4a86",
+            "raw_artifact_sha256": "5ffd3d380b7bc7854f6bead485b01cb96cff1ebb1775072b29b95b42f182107c",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 18.31,
+                "pressure_min_hpa": 1000.0,
+                "max_vorticity_s1": 0.00033271,
+                "min_okubo_weiss_s2": -1.0452e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025294N14290",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025294N14290_features.nc",
+            "feature_sha256": "84bda7bd2d3fa2ba6e0b19b1142aa3a84a41eeca244dd6d1e69f15830fa74793",
+            "raw_artifact_sha256": "c87cabfa072f1a769bcc1246bf41031536cf55840a90ac85f723910905b05d57",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 25.52,
+                "pressure_min_hpa": 892.0,
+                "max_vorticity_s1": 0.0011452,
+                "min_okubo_weiss_s2": -1.2814e-06
+            }
+        },
+        {
+            "system_id": "TC_2025_2025297N13247",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025297N13247_features.nc",
+            "feature_sha256": "dbec3410b2c2dfb8a3c21312b83d4a6c0f405e4c76181b336ad73f319a2d335a",
+            "raw_artifact_sha256": "2534d16b2c978912fca1f8dc48214900240c1d6c1442378374f1d0ed3f065236",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 14.58,
+                "pressure_min_hpa": 1007.0,
+                "max_vorticity_s1": 0.00032101,
+                "min_okubo_weiss_s2": -9.7795e-08
+            }
+        },
+        {
+            "system_id": "TC_2025_2025300N11086",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2025_2025300N11086_features.nc",
+            "feature_sha256": "f866e3de1b1bc9aaf3202278e8415c167ff68d82e82220d5f9c87d9f45896fa1",
+            "raw_artifact_sha256": "d4ccce8acd63585c378956b2d14a87ea3315f685f1113f84a1aed437bf99698a",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 19.87,
+                "pressure_min_hpa": 995.0,
+                "max_vorticity_s1": 0.00037407,
+                "min_okubo_weiss_s2": -1.3972e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025305N08140",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025305N08140_features.nc",
+            "feature_sha256": "4803c6a79eca17cabe5ce051bce6a11ca573f37a59a77501a1f662143a56e48a",
+            "raw_artifact_sha256": "15c5a25aacfd552890a0ab59392f79c6eeff5cd77d16f96658e0dcf3713a202c",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 14.96,
+                "pressure_min_hpa": 1001.0,
+                "max_vorticity_s1": 0.00049507,
+                "min_okubo_weiss_s2": -1.8766e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025308N09144",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2025_2025308N09144_features.nc",
+            "feature_sha256": "4a40fe4d52b27240273e446a83356fbeb11900a30d0a3b305cbef791f104d246",
+            "raw_artifact_sha256": "ab25a957ddba8bcc11d8aa926998147c8da2d8d4512d1a42838e47d8788de8a5",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.73,
+                "pressure_min_hpa": 997.0,
+                "max_vorticity_s1": 0.00032695,
+                "min_okubo_weiss_s2": -1.0524e-07
+            }
+        },
+        {
+            "system_id": "TC_2025_2025330N05099",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2025_2025330N05099_features.nc",
+            "feature_sha256": "e0acf5f5689ad5ce258281455984febc2634c6fee8bee501f990ecdb164b41e0",
+            "raw_artifact_sha256": "3b547f84d54539af6db6d4b954588fc3211972430439903b1fa07e7918d7fcc7",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 16.21,
+                "pressure_min_hpa": 997.0,
+                "max_vorticity_s1": 0.00020275,
+                "min_okubo_weiss_s2": -3.0985e-08
+            }
+        },
+        {
+            "system_id": "TC_2025_2025331N07081",
+            "cohort_id": "D",
+            "cohort_name": "Monsoon Low Pressure Systems",
+            "system_class": "MONSOON",
+            "feature_file": "TC_2025_2025331N07081_features.nc",
+            "feature_sha256": "034f7c4956d160d8aa16598c96b37776c5f8e0c3674dc196354e3cd5502b0283",
+            "raw_artifact_sha256": "40b920c077e0ae5b90cc762badfa2c86d38120142c7d6b4f298434fa91fac5a3",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 14.46,
+                "pressure_min_hpa": 1001.0,
+                "max_vorticity_s1": 0.00033771,
+                "min_okubo_weiss_s2": -1.0609e-07
+            }
+        },
+        {
+            "system_id": "TC_2026_2026005S10097",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026005S10097_features.nc",
+            "feature_sha256": "a27d6f1f76ef8f356c65633e1e5012dfe1b81d22a2119d367e9fd80d6232102c",
+            "raw_artifact_sha256": "ff46b72c566325020719205a3df6f4503ac4eb664f35427f741f4dde4a9fdac1",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.8,
+                "pressure_min_hpa": 1001.0,
+                "max_vorticity_s1": 7.7506e-05,
+                "min_okubo_weiss_s2": -3.7902e-08
+            }
+        },
+        {
+            "system_id": "TC_2026_2026051S15076",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026051S15076_features.nc",
+            "feature_sha256": "c74820f6817d73c6455ba1c5453889f5c3a02f62eac557f3898c8a361778b306",
+            "raw_artifact_sha256": "2f6a3a40f3bde6ba8fd898e8f39f4da21ccac8e4de3ce56e5b375f6df7eadeea",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 23.32,
+                "pressure_min_hpa": 920.0,
+                "max_vorticity_s1": 0.00015305,
+                "min_okubo_weiss_s2": -8.6487e-07
+            }
+        },
+        {
+            "system_id": "TC_2026_2026099N09152",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026099N09152_features.nc",
+            "feature_sha256": "70cf4a70bb003c80bd440e6c35641f9d3dff99a459a4c26934ff572f67d5a9de",
+            "raw_artifact_sha256": "c9c3ce22d3643e1bd1a499b96a73081b48246a3c4dc879be0ee0cdfa785046c3",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 26.84,
+                "pressure_min_hpa": 897.0,
+                "max_vorticity_s1": 0.00086457,
+                "min_okubo_weiss_s2": -7.4213e-07
+            }
+        },
+        {
+            "system_id": "TC_2026_2026152N08237",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026152N08237_features.nc",
+            "feature_sha256": "765c7547e699b08041ad99851defd80d10570716c5864fccc45bae06a6ea7979",
+            "raw_artifact_sha256": "fc6406dac96b54918d96c2cfb2de83703ebed0839f4aa00e81ceb84e071599eb",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 11.99,
+                "pressure_min_hpa": 1007.0,
+                "max_vorticity_s1": 0.00029727,
+                "min_okubo_weiss_s2": -8.735e-08
+            }
+        },
+        {
+            "system_id": "TC_2026_2026157N14255",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026157N14255_features.nc",
+            "feature_sha256": "ede3327dc7614928efbf45ce47e0da8ebd011d83d5741a84544bd37d32e46505",
+            "raw_artifact_sha256": "6f106050d2dcd895bcaa53b31048f28451ff507d9f1dbc239dfad0034f718202",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 16.46,
+                "pressure_min_hpa": 1003.0,
+                "max_vorticity_s1": 0.00056677,
+                "min_okubo_weiss_s2": -2.8881e-07
+            }
+        },
+        {
+            "system_id": "TC_2026_2026158N10271",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026158N10271_features.nc",
+            "feature_sha256": "c43fed2af6bb41538c307191217889c7c6ce62c78d69e0f89c5d9306ca2f3e4d",
+            "raw_artifact_sha256": "ff3df3f6b496528dd5ea7e22e315cfda8a161223af1b34bfaede2081d1e8dbbf",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 11.99,
+                "pressure_min_hpa": 1007.0,
+                "max_vorticity_s1": 0.00037333,
+                "min_okubo_weiss_s2": -1.2319e-07
+            }
+        },
+        {
+            "system_id": "TC_2026_2026166N24260",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026166N24260_features.nc",
+            "feature_sha256": "42d8782f812992986a6fae10c5ae62f7695371c8b644ae729bf3e6c6ee553198",
+            "raw_artifact_sha256": "f560c3df121a6a9e8760ef00ee12790a1bfffbba3469f889572ecb8aff38737c",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 14.53,
+                "pressure_min_hpa": 1002.0,
+                "max_vorticity_s1": 0.00038304,
+                "min_okubo_weiss_s2": -1.2844e-07
+            }
+        },
+        {
+            "system_id": "TC_2026_2026180N11238",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026180N11238_features.nc",
+            "feature_sha256": "b9ef85d03d8cb7d1ba11f12a1070bac202c08005985566fdaf5559dcc299ebdc",
+            "raw_artifact_sha256": "bd23e13ecd16abdd2afe10e60c5d51f5fca4dfa6a262f4fadb657fecb39d5009",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 15.45,
+                "pressure_min_hpa": 1004.0,
+                "max_vorticity_s1": 0.00030556,
+                "min_okubo_weiss_s2": -8.5413e-08
+            }
+        },
+        {
+            "system_id": "TC_2026_2026182N09163",
+            "cohort_id": "A",
+            "cohort_name": "Strong Tropical Cyclones",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026182N09163_features.nc",
+            "feature_sha256": "dc35fcd2d82f19502ea376daf2deb561234f3f21f79921d157c6987ecb6801ee",
+            "raw_artifact_sha256": "90c989c3e92fff231bd763f18cd97c89e5a4502eb81253dd4e8ddd0a9060df9d",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 31.76,
+                "pressure_min_hpa": 901.0,
+                "max_vorticity_s1": 0.0010547,
+                "min_okubo_weiss_s2": -1.103e-06
+            }
+        },
+        {
+            "system_id": "TC_2026_2026194N12265",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026194N12265_features.nc",
+            "feature_sha256": "4a57dbc5d54f7f67b360e6ac5927b57d1a3e4f81a1747b5e54dc8f2a1f3c16f4",
+            "raw_artifact_sha256": "e5e415ca1914423066b81a0181f4c70085fd259086fca2a3095cecc2e424e08b",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 13.53,
+                "pressure_min_hpa": 1005.0,
+                "max_vorticity_s1": 0.00017895,
+                "min_okubo_weiss_s2": -3.4531e-08
+            }
+        },
+        {
+            "system_id": "TC_2026_2026198N08260",
+            "cohort_id": "B",
+            "cohort_name": "Weak Tropical Cyclones / Depressions",
+            "system_class": "TC",
+            "feature_file": "TC_2026_2026198N08260_features.nc",
+            "feature_sha256": "68648b10e8009578c2e011fa85e9922df7025f32f6e102ae21bbe9df054bf596",
+            "raw_artifact_sha256": "21dfd04decbfbc664fa089613aec6b5c6648cfce99d2c9160c2d2f7ea8a33f88",
+            "feature_version": "6C.2",
+            "algorithm_version": "1.0.0",
+            "quick_ref": {
+                "wind_max_ms": 20.94,
+                "pressure_min_hpa": 1006.0,
+                "max_vorticity_s1": 0.00055791,
+                "min_okubo_weiss_s2": -2.9264e-07
+            }
+        }
+    ]
+}

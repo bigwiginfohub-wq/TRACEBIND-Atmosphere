@@ -1,0 +1,10 @@
+schema_version: "1.0.0"
+dataset_sources:
+  ibtracs:
+    local_path: "data/raw/ibtracs_v04r01_last3years.csv"
+    expected_sha256: "auto" # Populated or verified upon first execution
+    remote_url: "https://www.ncei.noaa.gov/data/international-best-track-archive-for-climate-stewardship-ibtracs/v04r01/access/csv/ibtracs.last3years.list.v04r01.csv"
+    version: "v04r01"
+  era5:
+    provider: "ECMWF CDS"
+    dataset_name: "reanalysis-era5-single-levels"

@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TRACEBIND Research Catalog Schema",
+  "type": "object",
+  "required": ["catalog_metadata", "systems"],
+  "properties": {
+    "catalog_metadata": {
+      "type": "object",
+      "required": [
+        "catalog_version",
+        "selection_rules_hash",
+        "sources_hash",
+        "generated_utc",
+        "builder_version"
+      ],
+      "properties": {
+        "catalog_version": { "type": "string" },
+        "selection_rules_hash": { "type": "string" },
+        "sources_hash": { "type": "string" },
+        "generated_utc": { "type": "string" },
+        "builder_version": { "type": "string" }
+      }
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "system_id",
+          "cohort_id",
+          "cohort_name",
+          "system_name",
+          "event_year",
+          "system_class",
+          "subclass",
+          "basin",
+          "source_dataset",
+          "source_reference",
+          "analysis_time",
+          "center_lat",
+          "center_lon",
+          "lifecycle_stage",
+          "bounding_box",
+          "era5_filename",
+          "status"
+        ],
+        "properties": {
+          "system_id": { "type": "string" },
+          "cohort_id": { "type": "string" },
+          "cohort_name": { "type": "string" },
+          "system_name": { "type": "string" },
+          "event_year": { "type": "integer" },
+          "system_class": { "type": "string" },
+          "subclass": { "type": "string" },
+          "basin": { "type": "string" },
+          "source_dataset": { "type": "string" },
+          "source_reference": { "type": "string" },
+          "analysis_time": { "type": "string" },
+          "center_lat": { "type": "number", "minimum": -90.0, "maximum": 90.0 },
+          "center_lon": { "type": "number", "minimum": -180.0, "maximum": 180.0 },
+          "min_pressure_hpa": { "type": ["number", "null"] },
+          "max_wind_kt": { "type": ["number", "null"] },
+          "lifecycle_stage": { "type": "string" },
+          "bounding_box": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": { "type": "number" }
+          },
+          "era5_filename": { "type": "string" },
+          "sha256": { "type": ["string", "null"] },
+          "status": {
+            "type": "object",
+            "required": ["downloaded", "qc_passed", "processed"],
+            "properties": {
+              "downloaded": { "type": "boolean" },
+              "qc_passed": { "type": "boolean" },
+              "processed": { "type": "boolean" }
+            }
+          },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}
