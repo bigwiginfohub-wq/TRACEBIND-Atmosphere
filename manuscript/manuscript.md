@@ -2,9 +2,9 @@
 
 **Document Type:** Formal Methodological & Empirical Research Manuscript
 
-**Version:** 2.0 (Refactored Descriptor Taxonomy Draft)
+**Version:** 2.0 (Refactored Descriptor Taxonomy Draft - Phase 6 Frozen Baseline)
 
-**Date:** July 27, 2026
+**Date:** July 28, 2026
 
 **Status:** Methodological & Empirical Validation Complete / Ready for Journal Submission & Peer Review
 
@@ -44,12 +44,9 @@ Let $Z(\mathbf{x})$ represent a continuous, two-dimensional spatial random field
 
 $$I = \frac{N}{\sum_{i} \sum_{j} w_{ij}} \frac{\sum_{i} \sum_{j} w_{ij} (Z_i - \bar{Z})(Z_j - \bar{Z})}{\sum_{i} (Z_i - \bar{Z})^2}$$
 
-
 * **Geary's $C$:**
 
 $$C = \frac{(N-1)}{2 \sum_{i} \sum_{j} w_{ij}} \frac{\sum_{i} \sum_{j} w_{ij} (Z_i - Z_j)^2}{\sum_{i} (Z_i - \bar{Z})^2}$$
-
-
 
 While these metrics quantify second-order spatial dependence, Fourier phase randomization preserves the magnitude spectrum $\lvert\mathcal{F}\{Z(\mathbf{x})\}\rvert$ while destroying spatial phase alignment. Consequently, second-order spatial statistics are structurally invariant or highly noise-sensitive under non-local phase shuffling.
 
@@ -61,23 +58,23 @@ TRACEBIND quantifies field structure by extracting five core descriptors partiti
 
 $$\text{Field } Z(\mathbf{x}) \longrightarrow \begin{cases} \text{\textbf{Tier 1: Phase Organization}} & \longrightarrow \{GE, LE, C_{\text{orient}}\} \\ \text{\textbf{Tier 2: Cyclone Geometry}} & \longrightarrow \{A_{\text{radial}}, S_{\text{orient}}\} \end{cases}$$
 
-```
+```text
                       ┌──────────────────────────────────────────┐
                       │    Input Field (Spatial Kinematics)      │
                       └────────────────────┬─────────────────────┘
                                            │
                                            ▼
       ┌──────────────────────────────────────────────────────────────────────────┐
-      │                   TIER 1: PHASE ORGANIZATION SUBSPACE                     │
+      │                    TIER 1: PHASE ORGANIZATION SUBSPACE                   │
       │  Descriptors: GE (Gradient Energy), LE (Laplacian Energy),               │
       │               C_orient (Phase Coherence)                                 │
       │  Variance Explained: ~84.8% (PC1)                                        │
       │  Physical Meaning: Macro coherent phase structure vs randomized noise    │
       └────────────────┬─────────────────────────────────────────┬───────────────┘
-                       │ (Passes: Non-random phase)              │ (Fails: Phase noise)
+                       │ (Passes: Non-random phase)               │ (Fails: Phase noise)
                        ▼                                         ▼
       ┌──────────────────────────────────────────┐     ┌──────────────────┐
-      │   TIER 2: CYCLONE GEOMETRY SUBSPACE       │     │ Reject as Random │
+      │    TIER 2: CYCLONE GEOMETRY SUBSPACE     │     │ Reject as Random │
       │  Descriptors: A_radial (Radial Symmetry),│     └──────────────────┘
       │               S_orient (Shear/Orient)    │
       │  Variance Contribution: Independent PCs  │
@@ -87,7 +84,7 @@ $$\text{Field } Z(\mathbf{x}) \longrightarrow \begin{cases} \text{\textbf{Tier 1
                        │
                        ▼
       ┌──────────────────────────────────────────┐
-      │       PHYSICAL KINEMATIC PROFILE         │
+      │         PHYSICAL KINEMATIC PROFILE       │
       │  Disentangles macro phase organization   │
       │  from specific tropical vortex geometry  │
       └──────────────────────────────────────────┘
@@ -102,23 +99,17 @@ Tier 1 descriptors evaluate whether spatial energy is organized into coherent ma
 
 $$g_x(x,y) = \frac{\partial Z}{\partial x}, \quad g_y(x,y) = \frac{\partial Z}{\partial y}$$
 
-
 $$GE(Z) = \frac{1}{N^2} \sum_{x,y} \sqrt{g_x(x,y)^2 + g_y(x,y)^2}$$
-
 
 2. **Laplacian Energy Density ($LE$):** Measures spatial curvature concentration via the trace of the Hessian matrix $H(Z)$:
 
 $$\kappa(x,y) = \lvert\text{Tr}(H(Z))\rvert = \left\lvert \frac{\partial^2 Z}{\partial x^2} + \frac{\partial^2 Z}{\partial y^2} \right\rvert$$
 
-
 $$LE(Z) = \frac{1}{N^2} \sum_{x,y} \kappa(x,y)$$
-
 
 3. **Global Phase Orientation Coherence ($C_{\text{orient}}$):** Applies the 2D Discrete Fourier Transform ($\mathcal{F}\{Z\}(u,v) = \lvert A(u,v)\rvert e^{i \phi(u,v)}$) to extract phase angles $\phi(u,v) = \text{atan2}(\text{Im}(\mathcal{F}), \text{Re}(\mathcal{F}))$. Phase alignment across frequency bands is quantified as:
 
 $$C_{\text{orient}}(Z) = \frac{1}{N^2} \left\lvert \sum_{u} \sum_{v} e^{i \phi(u,v)} \right\rvert$$
-
-
 
 #### Tier 2: Cyclone Geometry Subspace
 
@@ -128,12 +119,9 @@ Tier 2 descriptors evaluate the specific kinematic shape, radial symmetry, and d
 
 $$A_{\text{radial}}(Z) = \frac{\text{Var}_{r}\left( \oint Z(r, \theta) d\theta \right)}{\text{Var}_{\theta}\left( \int Z(r, \theta) dr \right) + \epsilon}$$
 
-
 5. **Shear-Oriented Anisotropy ($S_{\text{orient}}$):** Quantifies structural stretch and rotational shear along principal kinematic axes:
 
 $$S_{\text{orient}}(Z) = \frac{\lambda_1 - \lambda_2}{\lambda_1 + \lambda_2}$$
-
-
 
 where $\lambda_1, \lambda_2$ are eigenvalues of the spatial structure tensor $S = \nabla Z \otimes \nabla Z^T$.
 
@@ -190,7 +178,7 @@ To ensure statistical discipline and prevent artifacts (e.g., small-sample covar
 
 Evaluated across six core synthetic scenarios against Moran’s $I$, Geary’s $C$, and Semivariogram Range:
 
-```
+```text
 +-----------------------------------------------------------------------------------+
 |                            TRACEBIND BENCHMARK SUITE                              |
 +--------------------------+--------------------------------------------------------+
@@ -206,7 +194,7 @@ Evaluated across six core synthetic scenarios against Moran’s $I$, Geary’s $
 
 ```
 
-1. **B1 (Perturbation Sensitivity):** TRACEBIND maintains bounded diagnostic sensitivity across 11 structural perturbation classes ($\vert{}\Delta T / T_0\vert{} \in [0.12, 1.35]$), avoiding the numeric divergence seen in Geary's $C$ under point noise ($\vert{}\Delta C / C_0\vert{} \approx 13.8$).
+1. **B1 (Perturbation Sensitivity):** TRACEBIND maintains bounded diagnostic sensitivity across 11 structural perturbation classes ($\lvert\Delta T / T_0\rvert \in [0.12, 1.35]$), avoiding the numeric divergence seen in Geary's $C$ under point noise ($\lvert\Delta C / C_0\rvert \approx 13.8$).
 2. **B2 (Computational Complexity):** Runtime ($T$) and peak resident memory ($M$) scale linearly with total pixel count $P = N^2$ ($b_T = 0.99$, $95\%\text{ CI: } [0.97, 1.01]$), confirming $O(P)$ asymptotic scaling.
 3. **B4 (Phase Scrambling):** Under Fourier phase scrambling from 0% to 100%, Moran's $I$ ($1.0 \rightarrow 0.98$) and Semivariogram Range ($1.0 \rightarrow 1.0$) remain invariant. In contrast, TRACEBIND exhibits a monotonic decay ($1.00 \rightarrow 0.74$), capturing non-second-order phase structure.
 
@@ -214,7 +202,7 @@ Evaluated across six core synthetic scenarios against Moran’s $I$, Geary’s $
 
 ### 4.2 Empirical Atmospheric Validation (ERA5 Reanalysis)
 
-The refactored Phase 5D pipeline evaluated the frozen 5D descriptor taxonomy on real-world ERA5 atmospheric velocity fields, comparing core Tropical Cyclones (TCs) against non-vortex Negative Control systems.
+The Phase 5D pipeline evaluated the frozen 5D descriptor taxonomy on real-world ERA5 atmospheric velocity fields, comparing core Tropical Cyclones (TCs) against non-vortex Negative Control systems.
 
 #### 1. Bootstrapped Confidence Intervals (N=1,000 Iterations)
 
@@ -238,8 +226,8 @@ To test whether descriptor rankings were artificially driven by extreme storms (
 
 #### 3. Inter-Descriptor Correlation Matrix
 
-```
-               GE       LE    C_orient  A_radial  S_orient
+```text
+               GE        LE    C_orient  A_radial  S_orient
 GE           1.000   -0.831     0.853    -0.110     0.080
 LE          -0.831    1.000    -0.792     0.142    -0.055
 C_orient     0.853   -0.792     1.000    -0.098     0.062
@@ -305,7 +293,8 @@ S_orient     0.080   -0.055     0.062     0.041     1.000
 
 ## 7. Software & Data Availability
 
-The frozen reference implementation of TRACEBIND, execution scripts, reproduction manifests, and synthetic/empirical result sets are made publicly available under an open-source MIT license at a dedicated GitHub/Zenodo repository upon publication.
+The frozen reference implementation of TRACEBIND, execution scripts, reproduction manifests, and synthetic/empirical result sets are publicly available under an open-source MIT license at:
+`https://github.com/bigwiginfohub-wq/TRACEBIND-Atmosphere` (Tag: `phase6-v1.0`).
 
 ---
 
@@ -323,4 +312,8 @@ TRACEBIND transitions spatial phase evaluation from single-scalar distance funct
 
 1. **Control Cohort Expansion:** Expand negative controls to $20\text{--}50$ non-tropical organized systems (e.g., extratropical cyclones, atmospheric rivers, polar lows) to narrow effect-size confidence intervals.
 2. **Multi-Basin Testing:** Evaluate the frozen 5D taxonomy across Atlantic, Western Pacific, and Indian Ocean TC basins to verify geographical invariance.
-3. **Hierarchical Gating:** Test whether a explicit two-stage gate (Tier 1 filter $\rightarrow$ Tier 2 classification) improves identification of organized vortices compared to standard single-vector classifiers.
+3. **Hierarchical Gating:** Test whether an explicit two-stage gate (Tier 1 filter $\rightarrow$ Tier 2 classification) improves identification of organized vortices compared to standard single-vector classifiers.
+
+```
+
+```
