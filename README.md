@@ -2,6 +2,7 @@
 
 [![Pipeline Status](https://img.shields.io/badge/Pipeline-PASSING-success.svg)](#execution--reproducibility)
 [![Phase 6 Baseline](https://img.shields.io/badge/Phase%206-FROZEN%20v1.0-blue.svg)](https://github.com/bigwiginfohub-wq/TRACEBIND-Atmosphere/releases/tag/phase6-v1.0)
+[![Phase 8 C2 Audit](https://img.shields.io/badge/Phase%208%20C2-FROZEN%20%26%20AUDITED-success.svg)](#phase-8-c2-blinded-empirical-validation)
 [![Manuscript](https://img.shields.io/badge/Manuscript-v2.0-green.svg)](manuscript/)
 [![Python Version](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
@@ -55,7 +56,7 @@ Evaluates macro-scale spatial coherence and structural energy concentration rela
 
 * **Gradient Energy Density ($GE$):** Concentration of local spatial finite differences.
 * **Laplacian Energy Density ($LE$):** Local structural curvature concentration via the trace of the spatial Hessian matrix.
-* **Global Phase Alignment ($C_{\text{orient}}$):** Directional alignment of 2D Fourier phase angles across spectral bands.
+* **Global Phase Alignment ($C_{\text{orient}}$ / $C_\phi$):** Directional alignment of 2D Fourier phase angles across spectral bands.
 
 ### 2. Tier 2: Cyclone & Field Geometry Subspace
 
@@ -66,14 +67,35 @@ Evaluates domain-specific structural kinematics and shape anisotropy:
 
 ---
 
-## Validation Highlights & Scientific Findings
+## Phase 8 C2: Blinded Empirical Validation
 
-TRACEBIND has been evaluated across synthetic benchmark suites and empirical ERA5 atmospheric reanalysis fields (Tropical Cyclones vs. Negative Controls):
+In Phase 8 C2, TRACEBIND was subjected to a **prospective, blinded, access-controlled empirical validation experiment** evaluating scalar Kinematic Phase Coherence ($C_\phi$) on ERA5 atmospheric reanalysis fields ($N = 20$, $10$ Tropical Cyclones vs. $10$ Matched Controls).
 
-* **Rank Stability (LOSO):** Achieves an average Spearman’s $\rho = 1.000$ under Leave-One-Storm-Out iterations, proving that descriptor ordering is invariant and not artificially driven by extreme events.
-* **Feature Orthogonality:** Empirical correlation analysis demonstrates strong mutual correlation within Tier 1 metrics ($\lvert r\rvert > 0.79$), while Tier 2 geometric metrics are virtually independent of Tier 1 ($\lvert r\rvert < 0.14$).
-* **Unsupervised PCA Proof:** Principal Component Analysis confirms that Tier 1 captures macro phase organization ($\text{PC}_1 = 84.8\%$ of population variance), while Tier 2 geometric descriptors operate on independent, highly specific orthogonal axes ($\text{PC}_2$ and $\text{PC}_5$).
-* **Asymptotic Computational Scaling:** Execution time and memory scale linearly $O(P)$ with total pixel count ($P = N^2$), making the implementation scalable to high-resolution grid domains.
+### Protocol & Audit Trail Integrity
+
+* **Cryptographic Provenance:** Pre-unblinding manifest snapshot (`pre_unblinding_audit_snapshot.json`) verified with SHA-256 integrity checks prior to keycard decryption.
+* **Blind Unblinding Audit:** $100\%$ line-by-line verification passed ($0$ mapping discrepancies across $20/20$ UUID keys).
+* **Experimental Lock:** Phase 8 C2 is permanently frozen to preserve protocol integrity without post-hoc modifications.
+
+### Experimental Results Summary
+
+| Metric / Test | Cyclone Cohort ($n=10$) | Control Cohort ($n=10$) | Test Statistic / Difference | $p$-value / Effect Size |
+| --- | --- | --- | --- | --- |
+| **Mean $C_\phi$** | $0.746451$ | $0.747183$ | $\Delta = -0.000732$ | — |
+| **Std. Deviation** | $0.211402$ | $0.180214$ | — | — |
+| **Median $C_\phi$** | $0.762025$ | $0.760811$ | — | — |
+| **Welch's $t$-test** | — | — | $t = -0.0083$ | $p = 0.9934$ (two-sided) |
+| **Mann-Whitney $U$** | — | — | $U = 46.0$ | $p = 0.7863$ (one-sided pre-registered) |
+| **Hedges' $g$** | — | — | — | $g = -0.0037$ |
+| **Cliff's $\delta$** | — | — | — | $\delta = -0.0800$ |
+
+### Confirmatory Conclusion
+
+Under the pre-registered Phase 8 C2 protocol, the hypothesis that cyclone cases exhibit systematically higher scalar phase coherence ($C_\phi$) than matched control cases was **not supported** ($p = 0.7863$, $g = -0.0037$). The observed distributions substantially overlap across both cohorts.
+
+### Exploratory Observation (Hypothesis-Generating)
+
+Several non-cyclonic control cases exhibiting high hydrodynamic organization (e.g., active monsoon troughs, shear zones, and surge flows) yielded $C_\phi$ values ($> 0.85\text{--}0.93$) comparable to intense tropical cyclones (e.g., `TC_TAUKTAE` $C_\phi = 0.9405$, `TC_KYARR` $C_\phi = 0.9246$). This indicates that **scalar $C_\phi$ quantifies broad synoptic-scale flow organization rather than cyclone-specific identity**. This finding serves as a baseline for future tensor-based metric formulations in prospective phases.
 
 ---
 
@@ -81,18 +103,30 @@ TRACEBIND has been evaluated across synthetic benchmark suites and empirical ERA
 
 ```text
 TRACEBIND-Atmosphere/
-├── tracebind/             # Core TRACEBIND package & descriptor extraction modules
-├── phase4/                # Synthetic generation & cross-metric benchmarking
-├── phase5/                # ERA5 empirical pipeline, stability & taxonomy scripts
-├── phase6/                # Frozen baseline, verification logs, and validation artifacts
-├── manuscript/            # Publication-ready draft & LaTeX assets
-├── experiments/           # Exploratory validation setups & notebooks
-├── benchmarks/            # Synthetic frozen benchmark suite (v1.0)
-├── data/                  # Atmospheric reanalysis & synthetic data arrays
-├── tests/                 # Pytest test suite for regression & determinism
-├── validate_release.py    # End-to-end automated validation runner
-├── requirements.txt       # Python dependency manifest
-└── README.md              # Project documentation
+├── tracebind/           # Core TRACEBIND package & descriptor extraction modules
+├── phase4/              # Synthetic generation & cross-metric benchmarking
+├── phase5/              # ERA5 empirical pipeline, stability & taxonomy scripts
+├── phase6/              # Frozen baseline, verification logs, and validation artifacts
+├── phase7/              # Atmospheric data processing & integration pipeline
+├── phase8/              # Blinded cohort execution, keycard manifest, audit & stats
+│   └── c2/
+│       ├── manifest/                 # Access-controlled keycard & cohort manifest
+│       ├── extraction/               # Extracted C_phi scalar results
+│       ├── diagnostics/              # Pre-unblinding audit snapshots & logs
+│       ├── unblinded_master_dataset.csv  # Frozen, verified master dataset
+│       ├── verify_pre_unblind.py     # Cryptographic stage-gate verification script
+│       ├── unblind.py                # Deterministic unblinding pipeline
+│       ├── statistical_analysis.py   # Pre-registered hypothesis testing runner
+│       ├── audit_unblinding.py       # Line-by-line keycard cross-reference auditor
+│       └── inference_report.json     # Final statistical results export
+├── manuscript/          # Publication-ready draft & LaTeX assets
+├── experiments/         # Exploratory validation setups & notebooks
+├── benchmarks/          # Synthetic frozen benchmark suite (v1.0)
+├── data/                # Atmospheric reanalysis & synthetic data arrays
+├── tests/               # Pytest test suite for regression & determinism
+├── validate_release.py  # End-to-end automated validation runner
+├── requirements.txt     # Python dependency manifest
+└── README.md            # Project documentation
 
 ```
 
@@ -108,14 +142,15 @@ TRACEBIND-Atmosphere/
 ### Setup
 
 1. **Clone the repository:**
+
 ```bash
 git clone [https://github.com/bigwiginfohub-wq/TRACEBIND-Atmosphere.git](https://github.com/bigwiginfohub-wq/TRACEBIND-Atmosphere.git)
 cd TRACEBIND-Atmosphere
 
 ```
 
-
 2. **Create and activate a virtual environment:**
+
 ```bash
 python -m venv venv
 # On Windows
@@ -125,36 +160,43 @@ source venv/bin/activate
 
 ```
 
-
 3. **Install dependencies:**
+
 ```bash
 pip install -r requirements.txt
 
 ```
 
-
-
 ---
 
 ## Execution & Reproducibility
 
-### 1. Run Descriptor Taxonomy & Hierarchical Analysis
+### 1. Run Phase 8 Pre-Unblinding Verification & Audit
+
+To verify the cryptographic integrity and execute line-by-line audit checks on Phase 8 C2:
+
+```bash
+cd phase8/c2
+python verify_pre_unblind.py
+python audit_unblinding.py
+
+```
+
+### 2. Execute Statistical Inference Test
+
+To re-run the pre-registered statistical analysis on the unblinded master dataset:
+
+```bash
+python phase8/c2/statistical_analysis.py
+
+```
+
+### 3. Run Descriptor Taxonomy & Hierarchical Analysis
 
 To execute the non-parametric validation, Leave-One-Storm-Out rank stability, correlation, and PCA analysis:
 
 ```bash
 python phase5/scripts/41_hierarchical_validation_and_stability.py
-
-```
-
-Outputs are written directly to `phase5/results/`.
-
-### 2. Automated Release & Phase 6 Baseline Validation
-
-To verify pipeline determinism, synthetic benchmarks, and environment integrity against the frozen baseline:
-
-```bash
-python validate_release.py
 
 ```
 
