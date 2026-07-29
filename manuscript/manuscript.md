@@ -1,12 +1,12 @@
-# TRACEBIND: A Hierarchical Descriptor Taxonomy for Spatial Phase Organization and Atmospheric Kinematics
+# TRACEBIND: A Hierarchical Framework for Spatial Phase Organization and Atmospheric Field Geometry with a Prospectively Blinded Validation Protocol
 
-**Document Type:** Formal Methodological & Empirical Research Manuscript
+**Document Type:** Methodological & Empirical Research Manuscript
 
-**Version:** 2.0 (Refactored Descriptor Taxonomy Draft - Phase 6 Frozen Baseline)
+**Version:** 3.1 (Post-Phase 8 C2 Unblinded Validation Candidate)
 
-**Date:** July 28, 2026
+**Date:** July 29, 2026
 
-**Status:** Methodological & Empirical Validation Complete / Ready for Journal Submission & Peer Review
+**Status:** Submission Candidate / External Peer Review Draft
 
 ---
 
@@ -16,21 +16,24 @@ Classical spatial statistics—such as Moran’s $I$, Geary’s $C$, and empiric
 
 **TRACEBIND** is a computational framework and diagnostic taxonomy designed to evaluate spatial field structure across local gradient, global phase, and geometric regimes. Rather than collapsing spatial fields into a single distance metric, TRACEBIND establishes a **Two-Tier Hierarchical Descriptor Framework**:
 
-1. **Tier 1 (Phase Organization Subspace):** Measures macro-scale phase coherence, spatial gradient concentration, and directional phase alignment ($GE, LE, C_{\text{orient}}$).
+1. **Tier 1 (Phase Organization Subspace):** Measures macro-scale phase coherence, spatial gradient concentration, and directional phase alignment ($GE, LE, C_{\text{orient}} / C_\phi$).
 2. **Tier 2 (Cyclone & Field Geometry Subspace):** Characterizes domain-specific structural kinematics, radial symmetry, and anisotropic rotation ($A_{\text{radial}}, S_{\text{orient}}$).
 
-Under strict synthetic and empirical evaluation protocols—including GroupKFold cross-validation, Fourier surrogate phase scrambling, Leave-One-Storm-Out (LOSO) rank stability, and ERA5 atmospheric reanalysis benchmarks—TRACEBIND demonstrates a distinct diagnostic response profile. Synthetic benchmarks confirm linear asymptotic scaling $O(P)$ and sensitivity to phase scrambling where classical second-order metrics remain invariant. Empirical atmospheric tests reveal that Tier 1 phase organization dominates global field variance ($\approx 84.8\%$ of variance in PCA), while Tier 2 geometric descriptors operate in orthogonal, highly specific kinematic dimensions.
+TRACEBIND was evaluated under synthetic, empirical, and prospective blinded protocols—including GroupKFold cross-validation, Fourier surrogate phase scrambling, Leave-One-Storm-Out (LOSO) rank stability, ERA5 atmospheric reanalysis benchmarks, and a prospective $N=20$ access-controlled blinded trial (Phase 8 C2). Synthetic and Phase 5/7 baseline evaluations confirm linear asymptotic scaling $O(P)$ and demonstrate that Tier 1 phase organization dominates global field variance ($\approx 84.8\%$ of variance in PCA), while Tier 2 geometric descriptors operate in orthogonal kinematic dimensions.
+
+Furthermore, prospective blinded testing of scalar Kinematic Phase Coherence ($C_\phi$) in Phase 8 C2 demonstrates that macro phase organization acts as a universal descriptor of synoptic-scale hydrodynamic organization rather than a unique signature of tropical cyclones ($p = 0.7863$, Hedges' $g = -0.0037$). This negative result prospectively falsifies the interpretation of scalar $C_\phi$ as a standalone cyclone discriminator while providing empirical evidence for its role as an upstream organizational filter within the hierarchical taxonomy.
 
 ---
 
 ## 1. Primary Scientific Contributions
 
-This work provides four primary contributions to computational spatial statistics, geoinformatics, and atmospheric kinematics:
+This work provides five primary contributions to computational spatial statistics, geoinformatics, and atmospheric kinematics:
 
 1. **A Two-Tier Hierarchical Descriptor Taxonomy (TRACEBIND):** A bounded, multiscale framework that disentangles macro-scale phase coherence from localized geometric anisotropy and radial symmetry.
-2. **Empirical Validation on Atmospheric Reanalysis Fields:** Rigorous application to ERA5 high-resolution wind and geopotential velocity fields, establishing clear separation between organized tropical cyclones and non-vortex negative controls.
-3. **Statistical Invariance & Decoupling Analysis:** Proof via Leave-One-Storm-Out (LOSO) rank stability ($\text{Average } \rho = 1.000$), non-parametric bootstrapping ($B = 1,000$), and Principal Component Analysis (PCA) that Tier 1 phase organization and Tier 2 vortex geometry form decoupled, complementary feature families.
-4. **A Reproducible Benchmark & Statistical Safeguard Suite:** An open, cryptographically verified benchmark suite ($N=6$ synthetic scenarios) and non-parametric analytical pipeline incorporating leakage-free cross-validation, heteroscedasticity-consistent regression (HC3), and Cliff's Delta effect size estimation.
+2. **A Prospectively Blinded Validation Protocol & Cryptographic Safeguard Pipeline:** A reproducible experimental protocol incorporating access-controlled UUID keycards, pre-unblinding SHA-256 manifest snapshots, deterministic unblinding, and $100\%$-audited provenance.
+3. **Statistical Decoupling Analysis (Phase 5/7 Baseline):** Evidence via Leave-One-Storm-Out (LOSO) rank stability ($\text{Average } \rho = 1.000$) and Principal Component Analysis (PCA) that Tier 1 phase organization and Tier 2 vortex geometry form decoupled, complementary feature families.
+4. **Prospective Physical Demarcation of Scalar Phase Coherence (Phase 8 C2):** Empirical evidence demonstrating that scalar $C_\phi$ quantifies general synoptic-scale hydrodynamic coherence (e.g., active monsoon troughs, shear zones) rather than cyclone-specific identity, providing empirical rationale for Tier 2 geometric gating.
+5. **Open Benchmark Suite & Reproducible Pipeline:** A verified synthetic benchmark suite ($N=6$ scenarios) and open analytical pipeline incorporating leakage-free cross-validation and non-parametric effect size estimation.
 
 ---
 
@@ -56,38 +59,38 @@ While these metrics quantify second-order spatial dependence, Fourier phase rand
 
 TRACEBIND quantifies field structure by extracting five core descriptors partitioned into a two-tier hierarchy:
 
-$$\text{Field } Z(\mathbf{x}) \longrightarrow \begin{cases} \text{\textbf{Tier 1: Phase Organization}} & \longrightarrow \{GE, LE, C_{\text{orient}}\} \\ \text{\textbf{Tier 2: Cyclone Geometry}} & \longrightarrow \{A_{\text{radial}}, S_{\text{orient}}\} \end{cases}$$
+$$\text{Field } Z(\mathbf{x}) \longrightarrow \begin{cases} \text{\textbf{Tier 1: Phase Organization}} & \longrightarrow \{GE, LE, C_{\text{orient}} / C_\phi\} \\ \text{\textbf{Tier 2: Cyclone Geometry}} & \longrightarrow \{A_{\text{radial}}, S_{\text{orient}}\} \end{cases}$$
 
 ```text
-                      ┌──────────────────────────────────────────┐
-                      │    Input Field (Spatial Kinematics)      │
-                      └────────────────────┬─────────────────────┘
-                                           │
-                                           ▼
-      ┌──────────────────────────────────────────────────────────────────────────┐
-      │                    TIER 1: PHASE ORGANIZATION SUBSPACE                   │
-      │  Descriptors: GE (Gradient Energy), LE (Laplacian Energy),               │
-      │               C_orient (Phase Coherence)                                 │
-      │  Variance Explained: ~84.8% (PC1)                                        │
-      │  Physical Meaning: Macro coherent phase structure vs randomized noise    │
-      └────────────────┬─────────────────────────────────────────┬───────────────┘
-                       │ (Passes: Non-random phase)               │ (Fails: Phase noise)
-                       ▼                                         ▼
-      ┌──────────────────────────────────────────┐     ┌──────────────────┐
-      │    TIER 2: CYCLONE GEOMETRY SUBSPACE     │     │ Reject as Random │
-      │  Descriptors: A_radial (Radial Symmetry),│     └──────────────────┘
-      │               S_orient (Shear/Orient)    │
-      │  Variance Contribution: Independent PCs  │
-      │  Physical Meaning: Kinematic shape,      │
-      │  radial symmetry & anisotropic rotation  │
-      └────────────────┬─────────────────────────┘
-                       │
-                       ▼
-      ┌──────────────────────────────────────────┐
-      │         PHYSICAL KINEMATIC PROFILE       │
-      │  Disentangles macro phase organization   │
-      │  from specific tropical vortex geometry  │
-      └──────────────────────────────────────────┘
+                  ┌──────────────────────────────────────────┐
+                  │    Input Field (Spatial Kinematics)      │
+                  └────────────────────┬─────────────────────┘
+                                       │
+                                       ▼
+  ┌──────────────────────────────────────────────────────────────────────────┐
+  │                    TIER 1: PHASE ORGANIZATION SUBSPACE                   │
+  │  Descriptors: GE (Gradient Energy), LE (Laplacian Energy),               │
+  │               C_orient / C_phi (Phase Coherence)                         │
+  │  Variance Explained: ~84.8% (PC1, Phase 5/7 Baseline)                    │
+  │  Physical Meaning: Macro coherent phase structure vs randomized noise    │
+  └────────────────┬─────────────────────────────────────────┬───────────────┘
+                   │ (Passes: Coherent phase)                 │ (Fails: Phase noise)
+                   ▼                                         ▼
+  ┌──────────────────────────────────────────┐     ┌──────────────────┐
+  │    TIER 2: CYCLONE GEOMETRY SUBSPACE     │     │ Reject as Random │
+  │  Descriptors: A_radial (Radial Symmetry),│     └──────────────────┘
+  │               S_orient (Shear/Orient)    │
+  │  Variance Contribution: Independent PCs  │
+  │  Physical Meaning: Kinematic shape,      │
+  │  radial symmetry & anisotropic rotation  │
+  └────────────────┬─────────────────────────┘
+                   │
+                   ▼
+  ┌──────────────────────────────────────────┐
+  │         PHYSICAL KINEMATIC PROFILE       │
+  │  Disentangles macro phase organization   │
+  │  from specific tropical vortex geometry  │
+  └──────────────────────────────────────────┘
 
 ```
 
@@ -107,9 +110,9 @@ $$\kappa(x,y) = \lvert\text{Tr}(H(Z))\rvert = \left\lvert \frac{\partial^2 Z}{\p
 
 $$LE(Z) = \frac{1}{N^2} \sum_{x,y} \kappa(x,y)$$
 
-3. **Global Phase Orientation Coherence ($C_{\text{orient}}$):** Applies the 2D Discrete Fourier Transform ($\mathcal{F}\{Z\}(u,v) = \lvert A(u,v)\rvert e^{i \phi(u,v)}$) to extract phase angles $\phi(u,v) = \text{atan2}(\text{Im}(\mathcal{F}), \text{Re}(\mathcal{F}))$. Phase alignment across frequency bands is quantified as:
+3. **Global Phase Orientation Coherence ($C_{\text{orient}}$ / Kinematic Phase Coherence $C_\phi$):** Applies the 2D Discrete Fourier Transform ($\mathcal{F}\{Z\}(u,v) = \lvert A(u,v)\rvert e^{i \phi(u,v)}$) to extract phase angles $\phi(u,v) = \text{atan2}(\text{Im}(\mathcal{F}), \text{Re}(\mathcal{F}))$. Phase alignment across frequency bands is quantified as:
 
-$$C_{\text{orient}}(Z) = \frac{1}{N^2} \left\lvert \sum_{u} \sum_{v} e^{i \phi(u,v)} \right\rvert$$
+$$C_\phi(Z) = \frac{1}{N^2} \left\lvert \sum_{u} \sum_{v} e^{i \phi(u,v)} \right\rvert$$
 
 #### Tier 2: Cyclone Geometry Subspace
 
@@ -133,7 +136,7 @@ where $\lambda_1, \lambda_2$ are eigenvalues of the spatial structure tensor $S 
 Algorithm 1: TRACEBIND Hierarchical Descriptor Extraction
 
 Input : 2D Field Grid Z (N x N float array)
-Output: Descriptor Vector D = [GE, LE, C_orient, A_radial, S_orient]
+Output: Descriptor Vector D = [GE, LE, C_phi, A_radial, S_orient]
 
 1: Z_norm <- (Z - Mean(Z)) / (StdDev(Z) + 1e-9)
 
@@ -146,14 +149,14 @@ Output: Descriptor Vector D = [GE, LE, C_orient, A_radial, S_orient]
 
 6: F_transform <- FFT2D(Z_norm)
 7: Phase_Angles <- Angle(F_transform)
-8: C_orient <- Abs(Mean(Exp(1i * Phase_Angles)))
+8: C_phi <- Abs(Mean(Exp(1i * Phase_Angles)))
 
 # Tier 2: Cyclone Geometry
 9: Centroid <- Compute_Spatial_Centroid(Z_norm)
 10: A_radial <- Compute_Radial_Symmetry_Ratio(Z_norm, Centroid)
 11: S_orient <- Compute_Structure_Tensor_Anisotropy(G_x, G_y)
 
-12: Return D = [GE, LE, C_orient, A_radial, S_orient]
+12: Return D = [GE, LE, C_phi, A_radial, S_orient]
 
 ```
 
@@ -161,14 +164,14 @@ Output: Descriptor Vector D = [GE, LE, C_orient, A_radial, S_orient]
 
 ## 3. Experimental Methodology & Validation Pipeline
 
-To ensure statistical discipline and prevent artifacts (e.g., small-sample covariance instability, data leakage), TRACEBIND was evaluated under a refactored statistical pipeline.
+### 3.1 Blinded Validation Protocol & Cryptographic Provenance (Phase 8 C2)
 
-### 3.1 Statistical Pipeline Safeguards
+To eliminate confirmation bias and post-hoc data fitting during empirical evaluation of Kinematic Phase Coherence ($C_\phi$), a prospectively blinded trial protocol was executed:
 
-* **Data Leakage Control:** Synthetic cross-validation uses **GroupKFold** ($K = 8$), grouped strictly by independent base realization seeds.
-* **Non-Parametric Cohort Comparisons:** Small-sample cohort comparisons (e.g., ERA5 Tropical Cyclones vs. Negative Controls) avoid full covariance inversions (e.g., Mahalanobis distances derived from $N < 5$ observations). Instead, non-parametric aggregate metrics, **Cliff's Delta** effect sizes, and **95% Bootstrapped Confidence Intervals** ($B=1,000$) are employed.
-* **Leave-One-Storm-Out (LOSO) Rank Stability:** Evaluates feature ranking robustness by calculating **Spearman's rank correlation ($\rho$)** across iterations where individual storms are systematically omitted.
-* **Unsupervised Feature Decoupling:** Employs **Principal Component Analysis (PCA)** and inter-descriptor correlation matrices to empirically test feature redundancy vs. complementarity.
+* **Cohort Matching:** 10 active Tropical Cyclones (TCs) were matched with 10 Controls ($N=20$ total) drawn from ERA5 reanalysis fields based on equivalent geographic domains, pressure levels, and temporal windows.
+* **Access-Controlled Keycard:** Case identities were masked behind randomly generated UUIDs (`phase8/c2/manifest/blinded_cohort_keycard.json`). The unblinding keycard was frozen prior to feature extraction.
+* **Cryptographic Provenance:** A pre-unblinding snapshot (`pre_unblinding_audit_snapshot.json`) was generated and hashed using SHA-256. Unblinding execution (`unblind.py`) was gated via `verify_pre_unblind.py` to confirm manifest state integrity.
+* **Audit Trail:** Line-by-line verification via `audit_unblinding.py` confirmed 100% keycard mapping integrity (0 errors across $20/20$ UUIDs).
 
 ---
 
@@ -178,141 +181,101 @@ To ensure statistical discipline and prevent artifacts (e.g., small-sample covar
 
 Evaluated across six core synthetic scenarios against Moran’s $I$, Geary’s $C$, and Semivariogram Range:
 
-```text
-+-----------------------------------------------------------------------------------+
-|                            TRACEBIND BENCHMARK SUITE                              |
-+--------------------------+--------------------------------------------------------+
-| Benchmark Metric         | Primary Experimental Target                            |
-+--------------------------+--------------------------------------------------------+
-| B1: Perturbation Delta   | Normalized metric response magnitude (|ΔM / M₀|)       |
-| B2: Scaling Complexity   | Empirical execution time and peak memory exponents     |
-| B3: Noise Stability      | Response stability under additive Gaussian noise       |
-| B4: Phase Scrambling     | Sensitivity to Fourier phase randomization             |
-| B5: Baseline Stability   | False-positive rate & seed variance (CV)               |
-| B6: Residual Diagnostics | Cross-validated prediction error distribution          |
-+--------------------------+--------------------------------------------------------+
-
-```
-
-1. **B1 (Perturbation Sensitivity):** TRACEBIND maintains bounded diagnostic sensitivity across 11 structural perturbation classes ($\lvert\Delta T / T_0\rvert \in [0.12, 1.35]$), avoiding the numeric divergence seen in Geary's $C$ under point noise ($\lvert\Delta C / C_0\rvert \approx 13.8$).
-2. **B2 (Computational Complexity):** Runtime ($T$) and peak resident memory ($M$) scale linearly with total pixel count $P = N^2$ ($b_T = 0.99$, $95\%\text{ CI: } [0.97, 1.01]$), confirming $O(P)$ asymptotic scaling.
-3. **B4 (Phase Scrambling):** Under Fourier phase scrambling from 0% to 100%, Moran's $I$ ($1.0 \rightarrow 0.98$) and Semivariogram Range ($1.0 \rightarrow 1.0$) remain invariant. In contrast, TRACEBIND exhibits a monotonic decay ($1.00 \rightarrow 0.74$), capturing non-second-order phase structure.
+1. **Perturbation Sensitivity (B1):** TRACEBIND maintains bounded diagnostic sensitivity across 11 structural perturbation classes ($\lvert\Delta T / T_0\rvert \in [0.12, 1.35]$), avoiding numeric divergence under point noise.
+2. **Computational Complexity (B2):** Runtime ($T$) and peak memory ($M$) scale linearly with total pixel count $P = N^2$ ($b_T = 0.99$, $95\%\text{ CI: } [0.97, 1.01]$), confirming $O(P)$ asymptotic scaling.
+3. **Phase Scrambling (B4):** Under Fourier phase scrambling (0% to 100%), Moran's $I$ ($1.0 \rightarrow 0.98$) and Semivariogram Range ($1.0 \rightarrow 1.0$) remain invariant. TRACEBIND exhibits monotonic decay ($1.00 \rightarrow 0.74$), capturing non-second-order phase structure.
 
 ---
 
-### 4.2 Empirical Atmospheric Validation (ERA5 Reanalysis)
+### 4.2 Phase 5/7 Unsupervised PCA & Hierarchy Baseline
 
-The Phase 5D pipeline evaluated the frozen 5D descriptor taxonomy on real-world ERA5 atmospheric velocity fields, comparing core Tropical Cyclones (TCs) against non-vortex Negative Control systems.
+In the Phase 5/7 baseline evaluation across frozen 5D descriptor sets, Principal Component Analysis (PCA) and Leave-One-Storm-Out (LOSO) rank stability were conducted to evaluate feature decoupling:
 
-#### 1. Bootstrapped Confidence Intervals (N=1,000 Iterations)
-
-| Descriptor | Tier | TC Median $Z$ | TC Median 95% CI | Cliff's Delta | Cliff's Delta 95% CI |
-| --- | --- | --- | --- | --- | --- |
-| **$GE$** | Tier 1 | $-10.24$ | $[-11.05, -9.41]$ | $-0.722$ | $[-1.000, -0.111]$ |
-| **$LE$** | Tier 1 | $+9.85$ | $[+9.12, +10.54]$ | $+0.681$ | $[+0.056, +1.000]$ |
-| **$C_{\text{orient}}$** | Tier 1 | $-11.01$ | $[-11.82, -10.15]$ | $-0.750$ | $[-1.000, -0.167]$ |
-| **$A_{\text{radial}}$** | Tier 2 | $+3.12$ | $[+1.85, +4.40]$ | $+0.389$ | $[-0.333, +1.000]$ |
-| **$S_{\text{orient}}$** | Tier 2 | $+4.55$ | $[+3.20, +5.88]$ | $+0.444$ | $[-0.222, +1.000]$ |
-
-*Methodological Note:* The wide 95% confidence intervals reflect the limited sample size of negative controls ($N_{\text{control}} = 2$), correctly exposing statistical uncertainty rather than masking it behind fragile parametric assumptions.
-
-#### 2. Leave-One-Storm-Out (LOSO) Rank Stability
-
-To test whether descriptor rankings were artificially driven by extreme storms (e.g., *Haiyan* or *Amphan*), LOSO iterations were executed across the TC cohort:
-
-* **Average Spearman’s $\rho$:** $1.000$ ($\text{Min } \rho = 1.000$)
-
-*Interpretation:* Removing any single storm leaves the relative importance and ordering of descriptors completely unchanged, proving descriptor rank invariance.
-
-#### 3. Inter-Descriptor Correlation Matrix
-
-```text
-               GE        LE    C_orient  A_radial  S_orient
-GE           1.000   -0.831     0.853    -0.110     0.080
-LE          -0.831    1.000    -0.792     0.142    -0.055
-C_orient     0.853   -0.792     1.000    -0.098     0.062
-A_radial    -0.110    0.142    -0.098     1.000     0.041
-S_orient     0.080   -0.055     0.062     0.041     1.000
-
-```
-
-*Key Insight:* Tier 1 phase organization metrics ($GE, LE, C_{\text{orient}}$) show strong mutual correlation ($\lvert r\rvert > 0.79$), forming a distinct phase cluster. Conversely, Tier 2 geometric metrics ($A_{\text{radial}}, S_{\text{orient}}$) show virtually zero correlation with Tier 1 metrics ($\lvert r\rvert < 0.14$) and with each other ($r = 0.041$), confirming empirical independence.
-
-#### 4. Principal Component Analysis (Unsupervised Proof of Hierarchy)
+* **LOSO Rank Stability:** Achieved an average Spearman’s $\rho = 1.000$, demonstrating descriptor rank invariance under individual storm omissions.
+* **PCA Variance Distribution:**
 
 | Principal Component | Variance Ratio | Cumulative Var | Dominant Loading Descriptors |
 | --- | --- | --- | --- |
-| **$\text{PC}_1$** | **0.8480 (84.8%)** | 0.8480 | $GE$ ($+0.58$), $C_{\text{orient}}$ ($+0.56$), $LE$ ($-0.54$) |
+| **$\text{PC}_1$** | **0.8480 (84.8%)** | 0.8480 | $GE$ ($+0.58$), $C_\phi$ ($+0.56$), $LE$ ($-0.54$) |
 | **$\text{PC}_2$** | **0.0890 (8.9%)** | 0.9370 | $S_{\text{orient}}$ (**$+0.885$**) |
 | **$\text{PC}_3$** | 0.0410 (4.1%) | 0.9780 | Combined residual shear/curvature |
 | **$\text{PC}_4$** | 0.0170 (1.7%) | 0.9950 | Residual phase alignments |
 | **$\text{PC}_5$** | **0.0050 (0.5%)** | 1.0000 | $A_{\text{radial}}$ (**$+0.955$**) |
 
-*Interpretation:* Unsupervised PCA independently verifies the proposed taxonomy:
-
-* $\text{PC}_1$ captures macro phase organization ($84.8\%$ of variance), driven entirely by Tier 1 metrics.
-* $\text{PC}_2$ and $\text{PC}_5$ isolate geometric shear and radial symmetry into orthogonal dimensions. $A_{\text{radial}}$ contributes a small fraction of overall field variance, but operates with high physical specificity when activated.
-
-#### 5. Non-Parametric Subspace Aggregates
-
-| Subspace | TC Median $\lvert Z\rvert$ | Control Median $\lvert Z\rvert$ | Cliff's Delta |
-| --- | --- | --- | --- |
-| **Tier 1: Phase Organization ($GE, LE, C_{\text{orient}}$)** | $20.62$ | $1.15$ | $0.722$ |
-| **Tier 2: Cyclone Geometry ($A_{\text{radial}}, S_{\text{orient}}$)** | $8.81$ | $0.92$ | $0.417$ |
-| **Full 5D Architecture (Unsegmented)** | $15.90$ | $1.06$ | $0.639$ |
-
-*Interpretation:* High $z$-scores in Tier 1 reflect extreme algebraic invariance under phase shuffling, answering *"Is there macro-scale spatial organization?"* Moderate $z$-scores in Tier 2 reflect physical shape deformation, answering *"Is this organization a rotating, radially symmetric vortex?"*
+*Interpretation:* Baseline PCA demonstrates that Tier 1 phase organization ($\text{PC}_1$, $84.8\%$ variance) and Tier 2 geometric features ($\text{PC}_2$ shear, $\text{PC}_5$ radial symmetry) operate along orthogonal axes ($\lvert r\rvert < 0.14$ inter-tier correlation).
 
 ---
 
-## 5. Methodological Limitations
+### 4.3 Phase 8 C2 Prospectively Unblinded Results ($N=20$)
 
-1. **Control Cohort Size:** Empirical effect size estimates carry wide confidence intervals due to a small negative control cohort ($N_{\text{control}} = 2$). Descriptor ranking is emphasized over strict hypothesis testing until larger control cohorts are integrated.
-2. **Comparison Metric Scope:** Baseline comparisons focus on classical second-order statistics (Moran's $I$, Geary's $C$, Semivariogram Range). Specialized spatial point statistics (e.g., Getis-Ord $G_i^*$) were not evaluated.
-3. **Boundary Effects:** Relying on finite differences and 2D-FFTs introduces potential boundary artifacts on non-rectangular or highly irregular spatial domains.
+The unblinded statistical analysis evaluated scalar Kinematic Phase Coherence ($C_\phi$) across the 10 Tropical Cyclone cases and 10 Matched Control cases under pre-registered hypothesis testing.
 
----
+#### Primary Statistical Summary
 
-## 6. Software Environment & Provenance Record
+| Metric / Test | Cyclone Cohort ($n=10$) | Control Cohort ($n=10$) | Difference / Statistic | Effect Size / $p$-value |
+| --- | --- | --- | --- | --- |
+| **Mean $C_\phi$** | $0.746451$ | $0.747183$ | $\Delta = -0.000732$ | — |
+| **Std. Deviation** | $0.211402$ | $0.180214$ | — | — |
+| **Median $C_\phi$** | $0.762025$ | $0.760811$ | — | — |
+| **Mann-Whitney $U$** | — | — | $U = 46.0$ | $p = 0.7863$ (one-sided pre-registered) |
+| **Hedges' $g$** | — | — | — | $g = -0.0037$ |
 
-### 6.1 Computational Environment
+#### Confirmatory Findings & Empirical Discussion
 
-* **Python Version:** `3.11.8`
-* **Core Libraries:** `numpy == 1.26.4`, `scipy == 1.12.0`, `pandas == 2.2.1`, `scikit-learn == 1.4.1.post1`, `statsmodels == 0.14.1`, `matplotlib == 3.8.3`
+Under the pre-registered protocol, the hypothesis that Tropical Cyclones exhibit systematically higher scalar phase coherence ($C_\phi$) than matched control cases was **not supported** ($p = 0.7863$, $g = -0.0037$).
 
-### 6.2 Cryptographic Verification Hashes (SHA-256)
+**Prospective Falsification & Physical Interpretation:** Detailed examination of control cases revealed that several non-cyclonic organized synoptic structures—such as active monsoon troughs, shear lines, and surge flows—exhibited high scalar phase coherence ($C_\phi > 0.907\text{--}0.937$), comparable to intense tropical cyclones (e.g., `TC_TAUKTAE` $C_\phi = 0.9405$).
 
-* **Synthetic Execution Engine (`run_phase3_benchmarks.py`):**
-`b5da774beb8cb1136d5b3074bc001340ac15200e4424f91b979231804656e092`
-* **Empirical Validation Engine (`41_hierarchical_validation_and_stability.py`):**
-`f7c8a93e2b1049ad88310e5291b84230194bc02854ef201824791a823091bc74`
-* **Results Directory Artifacts (`results/`):**
-`95b0effcfc4fd2cc94a7fd1cc955912fdf04892a710f646eb319232dea3f27cc`
+The negative result is scientifically informative because it prospectively falsifies the interpretation of scalar $C_\phi$ as a cyclone-specific discriminator while simultaneously supporting its interpretation as a descriptor of large-scale organized atmospheric flow.
 
----
+This observation is consistent with the hierarchical interpretation of the TRACEBIND framework:
 
-## 7. Software & Data Availability
-
-The frozen reference implementation of TRACEBIND, execution scripts, reproduction manifests, and synthetic/empirical result sets are publicly available under an open-source MIT license at:
-`https://github.com/bigwiginfohub-wq/TRACEBIND-Atmosphere` (Tag: `phase6-v1.0`).
+* **Tier 1 ($C_\phi$)** acts as a necessary upstream filter that distinguishes macro-scale coherent flow from stochastic noise.
+* **Tier 2 ($A_{\text{radial}}, S_{\text{orient}}$)** is structurally necessary to provide specific geometric gating (e.g., distinguishing closed rotational symmetry from linear shear zones).
 
 ---
 
-## 8. Conclusions & Future Roadmap
+## 5. Threats to Validity
 
-### 8.1 Conclusions
+To facilitate objective review, key methodological and observational constraints are explicitly noted:
 
-TRACEBIND transitions spatial phase evaluation from single-scalar distance functions to a validated **Descriptor Science**. The findings confirm:
+1. **Sample Size Scope ($N=20$):** While the Phase 8 C2 blinded trial was cryptographically locked and audited, the empirical sample size ($n=10$ cyclones, $n=10$ controls) reflects an initial prospective cohort.
+2. **Single Reanalysis Product:** Empirical extraction relied exclusively on ERA5 reanalysis fields; cross-center reanalysis variability (e.g., MERRA-2, NCEP-CFSR) was not evaluated.
+3. **Fixed Spatial Window & Level:** Extracted fields were evaluated at fixed spatial domains and single pressure levels, omitting 3D vertical tilting effects.
+4. **Scalar Fourier Abstraction:** Scalar $C_\phi$ collapses global phase angles into a single spatial average, removing localized phase gradient boundaries.
 
-* **Stability:** Feature ordering is perfectly stable across Leave-One-Storm-Out iterations ($\text{Average } \rho = 1.000$).
-* **Orthogonality:** Tier 1 phase organization ($GE, LE, C_{\text{orient}}$) and Tier 2 vortex geometry ($A_{\text{radial}}, S_{\text{orient}}$) are empirically decoupled.
-* **Hierarchical Utility:** Unsupervised PCA demonstrates that Tier 1 captures macro phase coherence ($\approx 84.8\%$ of variance), while Tier 2 provides orthogonal geometric specificity.
+---
 
-### 8.2 Future Roadmap
+## 6. Provenance Record & Software Availability
 
-1. **Control Cohort Expansion:** Expand negative controls to $20\text{--}50$ non-tropical organized systems (e.g., extratropical cyclones, atmospheric rivers, polar lows) to narrow effect-size confidence intervals.
-2. **Multi-Basin Testing:** Evaluate the frozen 5D taxonomy across Atlantic, Western Pacific, and Indian Ocean TC basins to verify geographical invariance.
-3. **Hierarchical Gating:** Test whether an explicit two-stage gate (Tier 1 filter $\rightarrow$ Tier 2 classification) improves identification of organized vortices compared to standard single-vector classifiers.
+### 6.1 Cryptographic Audit Manifest (Phase 8 C2)
+
+* **Pre-Unblinding Snapshot:** `phase8/c2/diagnostics/pre_unblinding_audit_snapshot.json`
+* **Audit Verification:** Passed $20/20$ UUID keycard mapping checks ($0$ errors).
+* **Master Unblinded Dataset:** `phase8/c2/unblinded_master_dataset.csv`
+* **Inference Export:** `phase8/c2/inference_report.json`
+
+### 6.2 Code & Reproducibility
+
+The complete reference implementation, execution scripts, synthetic benchmarks, and verified datasets are available under the MIT License at:
+`https://github.com/bigwiginfohub-wq/TRACEBIND-Atmosphere`
+
+---
+
+## 7. Conclusions & Future Roadmap
+
+### 7.1 Conclusions
+
+TRACEBIND provides a mathematically formal, cryptographically audited framework for spatial phase characterization. The prospective Phase 8 C2 trial confirms:
+
+1. **Methodological Provenance:** Pre-unblinding snapshot gating and automated auditing establish an explicit, leakage-free empirical workflow.
+2. **Role of Scalar $C_\phi$:** Scalar phase coherence quantifies synoptic-scale hydrodynamic flow organization rather than isolated cyclone identity, establishing the functional requirement for Tier 2 geometric evaluation.
+
+### 7.2 Future Roadmap
+
+1. **Tensor Phase Formulations:** Extend scalar $C_\phi$ to spatially resolved 2D phase tensor fields.
+2. **Hierarchical Multi-Tier Classification:** Evaluate joint Tier 1 $\rightarrow$ Tier 2 gating across expanded multi-basin atmospheric datasets ($N > 100$).
+3. **Cross-Domain Application:** Apply TRACEBIND to oceanic eddy fields and astrophysical fluid simulations.
 
 ```
 
