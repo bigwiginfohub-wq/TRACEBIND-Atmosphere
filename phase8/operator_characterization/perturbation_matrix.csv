@@ -1,0 +1,145 @@
+Case,PerturbationType,Level,Base_C_phi,Perturbed_C_phi,Delta_C_phi
+Zero Wind,Gaussian_Noise,0.05,0.0,0.638683,0.638683
+Zero Wind,Missing_Cells,0.05,0.0,0.0,0.0
+Zero Wind,Missing_Wedge,0.05,0.0,0.0,0.0
+Zero Wind,Uniform_Bias,0.05,0.0,0.62313,0.62313
+Zero Wind,Gaussian_Noise,0.1,0.0,0.638683,0.638683
+Zero Wind,Missing_Cells,0.1,0.0,0.0,0.0
+Zero Wind,Missing_Wedge,0.1,0.0,0.0,0.0
+Zero Wind,Uniform_Bias,0.1,0.0,0.62313,0.62313
+Zero Wind,Gaussian_Noise,0.2,0.0,0.638683,0.638683
+Zero Wind,Missing_Cells,0.2,0.0,0.0,0.0
+Zero Wind,Missing_Wedge,0.2,0.0,0.0,0.0
+Zero Wind,Uniform_Bias,0.2,0.0,0.62313,0.62313
+Zero Wind,Gaussian_Noise,0.3,0.0,0.638683,0.638683
+Zero Wind,Missing_Cells,0.3,0.0,0.0,0.0
+Zero Wind,Missing_Wedge,0.3,0.0,0.0,0.0
+Zero Wind,Uniform_Bias,0.3,0.0,0.62313,0.62313
+Uniform Flow,Gaussian_Noise,0.05,0.647641,0.647693,5.2e-05
+Uniform Flow,Missing_Cells,0.05,0.647641,0.614955,-0.032686
+Uniform Flow,Missing_Wedge,0.05,0.647641,0.646907,-0.000734
+Uniform Flow,Uniform_Bias,0.05,0.647641,0.647674,3.3e-05
+Uniform Flow,Gaussian_Noise,0.1,0.647641,0.647729,8.8e-05
+Uniform Flow,Missing_Cells,0.1,0.647641,0.581245,-0.066396
+Uniform Flow,Missing_Wedge,0.1,0.647641,0.644555,-0.003086
+Uniform Flow,Uniform_Bias,0.1,0.647641,0.64769,4.9e-05
+Uniform Flow,Gaussian_Noise,0.2,0.647641,0.647768,0.000127
+Uniform Flow,Missing_Cells,0.2,0.647641,0.514847,-0.132794
+Uniform Flow,Missing_Wedge,0.2,0.647641,0.634901,-0.01274
+Uniform Flow,Uniform_Bias,0.2,0.647641,0.647681,4e-05
+Uniform Flow,Gaussian_Noise,0.3,0.647641,0.647773,0.000132
+Uniform Flow,Missing_Cells,0.3,0.647641,0.450131,-0.19751
+Uniform Flow,Missing_Wedge,0.3,0.647641,0.617019,-0.030622
+Uniform Flow,Uniform_Bias,0.3,0.647641,0.647659,1.7e-05
+Pure Rotation,Gaussian_Noise,0.05,0.999932,0.999312,-0.00062
+Pure Rotation,Missing_Cells,0.05,0.999932,0.95014,-0.049792
+Pure Rotation,Missing_Wedge,0.05,0.999932,0.980124,-0.019807
+Pure Rotation,Uniform_Bias,0.05,0.999932,0.999307,-0.000625
+Pure Rotation,Gaussian_Noise,0.1,0.999932,0.997447,-0.002485
+Pure Rotation,Missing_Cells,0.1,0.999932,0.897821,-0.102111
+Pure Rotation,Missing_Wedge,0.1,0.999932,0.96018,-0.039751
+Pure Rotation,Uniform_Bias,0.1,0.999932,0.99743,-0.002501
+Pure Rotation,Gaussian_Noise,0.2,0.999932,0.989878,-0.010054
+Pure Rotation,Missing_Cells,0.2,0.999932,0.79653,-0.203401
+Pure Rotation,Missing_Wedge,0.2,0.999932,0.918926,-0.081005
+Pure Rotation,Uniform_Bias,0.2,0.999932,0.989908,-0.010024
+Pure Rotation,Gaussian_Noise,0.3,0.999932,0.976793,-0.023139
+Pure Rotation,Missing_Cells,0.3,0.999932,0.695308,-0.304624
+Pure Rotation,Missing_Wedge,0.3,0.999932,0.872345,-0.127587
+Pure Rotation,Uniform_Bias,0.3,0.999932,0.977293,-0.022638
+Solid Body Rotation,Gaussian_Noise,0.05,0.999932,0.99748,-0.002451
+Solid Body Rotation,Missing_Cells,0.05,0.999932,0.95014,-0.049792
+Solid Body Rotation,Missing_Wedge,0.05,0.999932,0.980124,-0.019807
+Solid Body Rotation,Uniform_Bias,0.05,0.999932,0.99723,-0.002702
+Solid Body Rotation,Gaussian_Noise,0.1,0.999932,0.991501,-0.008431
+Solid Body Rotation,Missing_Cells,0.1,0.999932,0.897821,-0.102111
+Solid Body Rotation,Missing_Wedge,0.1,0.999932,0.96018,-0.039751
+Solid Body Rotation,Uniform_Bias,0.1,0.999932,0.990869,-0.009063
+Solid Body Rotation,Gaussian_Noise,0.2,0.999932,0.973402,-0.026529
+Solid Body Rotation,Missing_Cells,0.2,0.999932,0.79653,-0.203401
+Solid Body Rotation,Missing_Wedge,0.2,0.999932,0.918926,-0.081005
+Solid Body Rotation,Uniform_Bias,0.2,0.999932,0.970938,-0.028994
+Solid Body Rotation,Gaussian_Noise,0.3,0.999932,0.949462,-0.05047
+Solid Body Rotation,Missing_Cells,0.3,0.999932,0.695308,-0.304624
+Solid Body Rotation,Missing_Wedge,0.3,0.999932,0.872345,-0.127587
+Solid Body Rotation,Uniform_Bias,0.3,0.999932,0.944204,-0.055728
+Potential Vortex,Gaussian_Noise,0.05,0.999932,0.647641,-0.35229
+Potential Vortex,Missing_Cells,0.05,0.999932,0.95014,-0.049792
+Potential Vortex,Missing_Wedge,0.05,0.999932,0.980124,-0.019807
+Potential Vortex,Uniform_Bias,0.05,0.999932,0.647641,-0.352291
+Potential Vortex,Gaussian_Noise,0.1,0.999932,0.647641,-0.35229
+Potential Vortex,Missing_Cells,0.1,0.999932,0.897821,-0.102111
+Potential Vortex,Missing_Wedge,0.1,0.999932,0.96018,-0.039751
+Potential Vortex,Uniform_Bias,0.1,0.999932,0.647641,-0.352291
+Potential Vortex,Gaussian_Noise,0.2,0.999932,0.647641,-0.352291
+Potential Vortex,Missing_Cells,0.2,0.999932,0.79653,-0.203401
+Potential Vortex,Missing_Wedge,0.2,0.999932,0.918926,-0.081005
+Potential Vortex,Uniform_Bias,0.2,0.999932,0.647641,-0.352291
+Potential Vortex,Gaussian_Noise,0.3,0.999932,0.647641,-0.352291
+Potential Vortex,Missing_Cells,0.3,0.999932,0.695308,-0.304624
+Potential Vortex,Missing_Wedge,0.3,0.999932,0.872345,-0.127587
+Potential Vortex,Uniform_Bias,0.3,0.999932,0.647641,-0.352291
+Lamb-Oseen Vortex,Gaussian_Noise,0.05,0.999932,0.999028,-0.000904
+Lamb-Oseen Vortex,Missing_Cells,0.05,0.999932,0.95014,-0.049792
+Lamb-Oseen Vortex,Missing_Wedge,0.05,0.999932,0.980124,-0.019807
+Lamb-Oseen Vortex,Uniform_Bias,0.05,0.999932,0.99907,-0.000861
+Lamb-Oseen Vortex,Gaussian_Noise,0.1,0.999932,0.996414,-0.003518
+Lamb-Oseen Vortex,Missing_Cells,0.1,0.999932,0.897821,-0.102111
+Lamb-Oseen Vortex,Missing_Wedge,0.1,0.999932,0.96018,-0.039751
+Lamb-Oseen Vortex,Uniform_Bias,0.1,0.999932,0.996484,-0.003447
+Lamb-Oseen Vortex,Gaussian_Noise,0.2,0.999932,0.986098,-0.013834
+Lamb-Oseen Vortex,Missing_Cells,0.2,0.999932,0.79653,-0.203401
+Lamb-Oseen Vortex,Missing_Wedge,0.2,0.999932,0.918926,-0.081005
+Lamb-Oseen Vortex,Uniform_Bias,0.2,0.999932,0.986423,-0.013509
+Lamb-Oseen Vortex,Gaussian_Noise,0.3,0.999932,0.967642,-0.032289
+Lamb-Oseen Vortex,Missing_Cells,0.3,0.999932,0.695308,-0.304624
+Lamb-Oseen Vortex,Missing_Wedge,0.3,0.999932,0.872345,-0.127587
+Lamb-Oseen Vortex,Uniform_Bias,0.3,0.999932,0.97006,-0.029871
+Monsoon Convergent Flow,Gaussian_Noise,0.05,0.447183,0.446902,-0.000281
+Monsoon Convergent Flow,Missing_Cells,0.05,0.447183,0.424916,-0.022268
+Monsoon Convergent Flow,Missing_Wedge,0.05,0.447183,0.438325,-0.008858
+Monsoon Convergent Flow,Uniform_Bias,0.05,0.447183,0.446904,-0.000279
+Monsoon Convergent Flow,Gaussian_Noise,0.1,0.447183,0.446056,-0.001127
+Monsoon Convergent Flow,Missing_Cells,0.1,0.447183,0.401518,-0.045665
+Monsoon Convergent Flow,Missing_Wedge,0.1,0.447183,0.429406,-0.017777
+Monsoon Convergent Flow,Uniform_Bias,0.1,0.447183,0.446066,-0.001117
+Monsoon Convergent Flow,Gaussian_Noise,0.2,0.447183,0.442654,-0.004529
+Monsoon Convergent Flow,Missing_Cells,0.2,0.447183,0.356219,-0.090964
+Monsoon Convergent Flow,Missing_Wedge,0.2,0.447183,0.410956,-0.036227
+Monsoon Convergent Flow,Uniform_Bias,0.2,0.447183,0.44273,-0.004453
+Monsoon Convergent Flow,Gaussian_Noise,0.3,0.447183,0.43987,-0.007313
+Monsoon Convergent Flow,Missing_Cells,0.3,0.447183,0.310951,-0.136232
+Monsoon Convergent Flow,Missing_Wedge,0.3,0.447183,0.390124,-0.057059
+Monsoon Convergent Flow,Uniform_Bias,0.3,0.447183,0.43721,-0.009973
+Cyclonic Spiral,Gaussian_Noise,0.05,0.96586,0.964983,-0.000876
+Cyclonic Spiral,Missing_Cells,0.05,0.96586,0.917765,-0.048095
+Cyclonic Spiral,Missing_Wedge,0.05,0.96586,0.946727,-0.019132
+Cyclonic Spiral,Uniform_Bias,0.05,0.96586,0.965028,-0.000832
+Cyclonic Spiral,Gaussian_Noise,0.1,0.96586,0.962374,-0.003486
+Cyclonic Spiral,Missing_Cells,0.1,0.96586,0.867229,-0.098631
+Cyclonic Spiral,Missing_Wedge,0.1,0.96586,0.927463,-0.038397
+Cyclonic Spiral,Uniform_Bias,0.1,0.96586,0.962513,-0.003347
+Cyclonic Spiral,Gaussian_Noise,0.2,0.96586,0.952219,-0.013641
+Cyclonic Spiral,Missing_Cells,0.2,0.96586,0.769389,-0.196471
+Cyclonic Spiral,Missing_Wedge,0.2,0.96586,0.887615,-0.078245
+Cyclonic Spiral,Uniform_Bias,0.2,0.96586,0.952577,-0.013283
+Cyclonic Spiral,Gaussian_Noise,0.3,0.96586,0.934254,-0.031606
+Cyclonic Spiral,Missing_Cells,0.3,0.96586,0.671616,-0.294244
+Cyclonic Spiral,Missing_Wedge,0.3,0.96586,0.84262,-0.123239
+Cyclonic Spiral,Uniform_Bias,0.3,0.96586,0.935789,-0.030071
+Steering Flow,Gaussian_Noise,0.05,0.647692,0.647694,2e-06
+Steering Flow,Missing_Cells,0.05,0.647692,0.615014,-0.032678
+Steering Flow,Missing_Wedge,0.05,0.647692,0.646918,-0.000774
+Steering Flow,Uniform_Bias,0.05,0.647692,0.647692,-0.0
+Steering Flow,Gaussian_Noise,0.1,0.647692,0.647696,3e-06
+Steering Flow,Missing_Cells,0.1,0.647692,0.581275,-0.066417
+Steering Flow,Missing_Wedge,0.1,0.647692,0.644566,-0.003126
+Steering Flow,Uniform_Bias,0.1,0.647692,0.647692,-0.0
+Steering Flow,Gaussian_Noise,0.2,0.647692,0.647699,7e-06
+Steering Flow,Missing_Cells,0.2,0.647692,0.514869,-0.132824
+Steering Flow,Missing_Wedge,0.2,0.647692,0.634913,-0.012779
+Steering Flow,Uniform_Bias,0.2,0.647692,0.647692,-1e-06
+Steering Flow,Gaussian_Noise,0.3,0.647692,0.647702,1e-05
+Steering Flow,Missing_Cells,0.3,0.647692,0.450155,-0.197538
+Steering Flow,Missing_Wedge,0.3,0.647692,0.617034,-0.030658
+Steering Flow,Uniform_Bias,0.3,0.647692,0.647691,-1e-06

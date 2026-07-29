@@ -1,0 +1,64 @@
+{
+  "protocol": {
+    "protocol_id": "TRACEBIND-C2-VAL-v1.0",
+    "stage": "C2",
+    "purpose": "Blinded Multi-Case Discrimination and Directional Permutation Null Validation",
+    "sample_size": 20,
+    "cohort_split": "10_cyclones_10_controls",
+    "primary_analysis_shell_km": [30.0, 150.0],
+    "blinding": {
+      "enabled": true,
+      "keycard_file": "phase8/c2/manifest/keycard_c2_frozen.json",
+      "unblind_trigger": {
+        "required_files": [
+          "phase8/c2/extraction/c2_cphi_results.csv",
+          "phase8/c2/extraction/qc_report.json",
+          "phase8/c2/extraction/failed_cases.log"
+        ],
+        "hash_verification_required": true,
+        "statistical_script_locked": true
+      }
+    }
+  },
+  "operator_lineage": {
+    "metric_id": "C_phi",
+    "metric_function": "compute_phase_coherence",
+    "definition": "Mean absolute velocity alignment with the local tangential unit vector relative to a specified vortex center",
+    "formula_text": "<|((u * e_theta_x) + (v * e_theta_y)) / |V||>",
+    "formula_latex": "\\left\\langle\\left|\\frac{\\vec{V}\\cdot\\hat{e}_\\theta}{|\\vec{V}|}\\right|\\right\\rangle",
+    "center_reference": "minimum_pressure_center",
+    "extraction_engine_hash": "2fb6622337132153bd66d974a59231179d5e9db10afbc234cc4e370d363d8ed9",
+    "characterization_engine_hash": "eea6539333a9281c7e2d9361042784ef11082156821d3f947bc6a182049103fb"
+  },
+  "null_hypothesis_model": {
+    "method": "directional_phase_permutation",
+    "iterations": 1000,
+    "description": "Preserves scalar wind speed magnitude |V| while uniformly shuffling velocity orientation angles to compute baseline empirical C_phi_null distributions."
+  },
+  "dataset_provenance_spec": {
+    "provider": "ECMWF",
+    "dataset": "ERA5_Hourly_Pressure_Levels",
+    "variables": [
+      "u_component_of_wind",
+      "v_component_of_wind",
+      "geopotential"
+    ],
+    "spatial_resolution_deg": 0.25,
+    "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+  },
+  "statistical_evaluation_plan": {
+    "tests": [
+      "Mann-Whitney U Test (two-tailed)",
+      "Receiver Operating Characteristic (ROC / AUC)",
+      "Interquartile Range (IQR) Overlap Assessment",
+      "Directional Permutation Significance (p_perm)"
+    ],
+    "reported_metrics": [
+      "Median C_phi (Cyclones)",
+      "Median C_phi (Controls)",
+      "Delta Median C_phi",
+      "Rosenthal's Effect Size r (Z / sqrt(N))",
+      "AUC with 95% Bootstrap Confidence Intervals"
+    ]
+  }
+}

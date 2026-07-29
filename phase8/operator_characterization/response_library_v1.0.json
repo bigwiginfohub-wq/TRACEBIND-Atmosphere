@@ -1,0 +1,109 @@
+{
+  "version": "1.0",
+  "phase7_operator_sha256": "eea6539333f27ab9544f4c57e1c6296d832deff69af39f25a5ddefe087be1285",
+  "static_characterization": {
+    "Zero Wind": {
+      "mean_speed": 0.0,
+      "rms_speed": 0.0,
+      "mean_vorticity": 0.0,
+      "mean_divergence": 0.0,
+      "c_phi": 0.0
+    },
+    "Uniform Flow": {
+      "mean_speed": 10.0,
+      "rms_speed": 10.0,
+      "mean_vorticity": 0.0,
+      "mean_divergence": 0.0,
+      "c_phi": 0.647641
+    },
+    "Pure Rotation": {
+      "mean_speed": 20.0,
+      "rms_speed": 20.0,
+      "mean_vorticity": 0.0002331,
+      "mean_divergence": 0.0,
+      "c_phi": 0.999932
+    },
+    "Solid Body Rotation": {
+      "mean_speed": 11.5733,
+      "rms_speed": 12.3491,
+      "mean_vorticity": 0.0002,
+      "mean_divergence": 0.0,
+      "c_phi": 0.999932
+    },
+    "Potential Vortex": {
+      "mean_speed": 6830146.1017,
+      "rms_speed": 826446280.9917,
+      "mean_vorticity": 6.866e-05,
+      "mean_divergence": 0.0,
+      "c_phi": 0.999932
+    },
+    "Lamb-Oseen Vortex": {
+      "mean_speed": 0.1371,
+      "rms_speed": 0.142,
+      "mean_vorticity": 1.09e-06,
+      "mean_divergence": 0.0,
+      "c_phi": 0.999932
+    },
+    "Monsoon Convergent Flow": {
+      "mean_speed": 8.9443,
+      "rms_speed": 8.9443,
+      "mean_vorticity": 4.662e-05,
+      "mean_divergence": -9.324e-05,
+      "c_phi": 0.447183
+    },
+    "Cyclonic Spiral": {
+      "mean_speed": 0.1419,
+      "rms_speed": 0.147,
+      "mean_vorticity": 1.09e-06,
+      "mean_divergence": -2.9e-07,
+      "c_phi": 0.96586
+    },
+    "Steering Flow": {
+      "mean_speed": 15.0003,
+      "rms_speed": 15.0007,
+      "mean_vorticity": 1.09e-06,
+      "mean_divergence": -0.0,
+      "c_phi": 0.647692
+    }
+  },
+  "sensitivity_analysis": {
+    "Random_Noise_100_Runs": {
+      "mean_c_phi": 0.634903,
+      "std_c_phi": 0.002642,
+      "min_c_phi": 0.629032,
+      "max_c_phi": 0.640769
+    },
+    "Steering_Flow_Sweep": {
+      "0": 0.999932,
+      "5": 0.647666,
+      "10": 0.647696,
+      "15": 0.647692,
+      "20": 0.647685,
+      "30": 0.647674,
+      "40": 0.647667
+    },
+    "Spiral_Inflow_Sweep": {
+      "0": 0.999932,
+      "5": 0.996127,
+      "10": 0.98474,
+      "15": 0.96586,
+      "20": 0.939628,
+      "30": 0.865966,
+      "45": 0.707058
+    },
+    "Lamb_Oseen_Radius_Sweep": {
+      "20000": 0.999932,
+      "35000": 0.999932,
+      "50000": 0.999932,
+      "75000": 0.999932,
+      "100000": 0.999932
+    },
+    "Lamb_Oseen_Circulation_Sweep": {
+      "20000.0": 0.999932,
+      "50000.0": 0.999932,
+      "100000.0": 0.999932,
+      "200000.0": 0.999932,
+      "500000.0": 0.999932
+    }
+  }
+}

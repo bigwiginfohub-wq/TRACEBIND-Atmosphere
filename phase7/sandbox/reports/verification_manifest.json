@@ -1,0 +1,68 @@
+{
+  "sandbox_version": "1.0.0",
+  "verification_date_utc": "2026-07-28T06:35:58.022869+00:00",
+  "environment": {
+    "git_commit": "ced20bf79ba7ac9cbb4f4538018a2d21b153e757",
+    "python_version": "3.14.4",
+    "numpy_version": "2.5.1",
+    "scipy_version": "1.18.0",
+    "master_rng_seed": 42
+  },
+  "overall_status": "FAIL",
+  "tests": [
+    {
+      "id": "TEST_001_ACCURACY_AND_CONVERGENCE",
+      "metric": "vorticity_eoc",
+      "observed_eoc": 0.9567,
+      "observed_rmse_pct": 0.0237,
+      "observed_linf_pct": 0.1764,
+      "target": "EOC >= 1.80, RMSE < 1.0%",
+      "status": "FAIL",
+      "runtime_ms": 52.1
+    },
+    {
+      "id": "TEST_002_INVARIANCE_ROTATION",
+      "metric": "radial_coherence",
+      "relative_delta": 0.0,
+      "target": "< 0.001",
+      "status": "PASS",
+      "runtime_ms": 0.41
+    },
+    {
+      "id": "TEST_003_INVARIANCE_TRANSLATION",
+      "metric": "radial_coherence",
+      "relative_delta": 0.0,
+      "target": "< 0.001",
+      "status": "PASS",
+      "runtime_ms": 0.81
+    },
+    {
+      "id": "TEST_004_PERTURBATION_NOISE_DECAY",
+      "metric": "phase_coherence_index",
+      "snr_spectrum_db": [
+        20.0,
+        15.0,
+        10.0,
+        5.0,
+        0.0
+      ],
+      "coherence_spectrum": [
+        0.9953,
+        0.985,
+        0.9504,
+        0.8682,
+        0.7659
+      ],
+      "strictly_monotonic": true,
+      "status": "PASS",
+      "runtime_ms": 60.19
+    }
+  ],
+  "artifact_hashes": {
+    "synthetic_vortex.py": "fbc796d103951450c25fc541ead1ebb4cb908dbb845a8d7ce5435f588b217cd3",
+    "coherence.py": "5efc6408e332a9df425e6522b2073aaff982eb15dafee883e6856b5bee67a4d6",
+    "verify_convergence.py": "4b383f5c637f305aa6958a320f07e807f60187913515755a8129a6733b4d5e67",
+    "PROMOTION_POLICY.md": "d84019261dd0e5ca6fcc681f3e81b55ae98e8fb89c6e3d09386caea902f612c9",
+    "P7_PREREG.md": "f6dcdf4f51ba92435f3ad435395bbabbcbe36570353379574d2d4ab4f8d627b4"
+  }
+}

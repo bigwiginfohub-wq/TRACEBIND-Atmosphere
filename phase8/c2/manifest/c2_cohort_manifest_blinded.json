@@ -1,0 +1,518 @@
+{
+  "pre_registration": {
+    "primary_metric": "C_phi",
+    "primary_comparison": "cyclone_vs_control",
+    "directional_hypothesis": "cyclone_C_phi > control_C_phi",
+    "thresholds_defined_before_analysis": true,
+    "post_hoc_metric_modification": false,
+    "null_model": "independent_pointwise_directional_uniform_permutation"
+  },
+  "provenance": {
+    "protocol_version": "v1.0",
+    "generated_utc": "2026-07-28T14:10:43.473315+00:00",
+    "generator_script_hash": "a1292ba4c1b638357cf5fc2167a79b205c9b5da83b97c90286f126388f600782",
+    "sample_size": 20
+  },
+  "cases": [
+    {
+      "blinded_id": "c2_uuid_a8aaadc4",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_a8aaadc4.nc",
+      "center_coordinates": [
+        18.5,
+        91.25
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_fa40c633",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_fa40c633.nc",
+      "center_coordinates": [
+        19.8,
+        87.7
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_aebda966",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_aebda966.nc",
+      "center_coordinates": [
+        18.1,
+        85.5
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_d60e0f4a",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_d60e0f4a.nc",
+      "center_coordinates": [
+        15.8,
+        94.2
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_4c0d80da",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_4c0d80da.nc",
+      "center_coordinates": [
+        19.1,
+        71.2
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_495c8cf2",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_495c8cf2.nc",
+      "center_coordinates": [
+        20.8,
+        87.3
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_f544906f",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_f544906f.nc",
+      "center_coordinates": [
+        17.5,
+        66.2
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_aa20f8c4",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_aa20f8c4.nc",
+      "center_coordinates": [
+        17.7,
+        83.3
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_49511e7b",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_49511e7b.nc",
+      "center_coordinates": [
+        18.7,
+        85.0
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_80ab3494",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_80ab3494.nc",
+      "center_coordinates": [
+        21.1,
+        88.1
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_ec81d97e",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_ec81d97e.nc",
+      "center_coordinates": [
+        -5.25,
+        77.5
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_fbf4a196",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_fbf4a196.nc",
+      "center_coordinates": [
+        17.0,
+        89.0
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_c6fae318",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_c6fae318.nc",
+      "center_coordinates": [
+        22.5,
+        82.1
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_4b4eea26",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_4b4eea26.nc",
+      "center_coordinates": [
+        21.0,
+        89.5
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_735327ae",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_735327ae.nc",
+      "center_coordinates": [
+        14.2,
+        72.8
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_ff53a69a",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_ff53a69a.nc",
+      "center_coordinates": [
+        13.5,
+        84.1
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_eb59c68d",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_eb59c68d.nc",
+      "center_coordinates": [
+        10.5,
+        78.0
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_4df18da4",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_4df18da4.nc",
+      "center_coordinates": [
+        12.0,
+        68.5
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_fca79975",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_fca79975.nc",
+      "center_coordinates": [
+        16.5,
+        85.2
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    },
+    {
+      "blinded_id": "c2_uuid_dc364aad",
+      "center_source": "minimum_pressure_center",
+      "data_source": "ERA5_Hourly_Pressure_Levels",
+      "file_path": "phase8/c2/raw/c2_uuid_dc364aad.nc",
+      "center_coordinates": [
+        23.1,
+        80.4
+      ],
+      "analysis_shell_km": [
+        30.0,
+        150.0
+      ],
+      "dataset_metadata": {
+        "provider": "ECMWF",
+        "dataset": "ERA5",
+        "variables": [
+          "u_component_of_wind",
+          "v_component_of_wind",
+          "geopotential"
+        ],
+        "spatial_resolution_deg": 0.25,
+        "interpolation_method": "bilinear_to_2.5km_cartesian_mesh"
+      }
+    }
+  ]
+}

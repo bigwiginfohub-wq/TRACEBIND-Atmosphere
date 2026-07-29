@@ -1,0 +1,44 @@
+{
+  "TC_2023_MOCHA": {
+    "file": "TC_2023_2023129N08091.nc",
+    "dx_m": 26362.06,
+    "dy_m": 27677.27,
+    "mslp_center": [
+      18.5,
+      91.25
+    ],
+    "search_radius_km": 75.0,
+    "candidate_cells": 21,
+    "local_max_vorticity": 0.0012366138398647308,
+    "vort_center": [
+      18.5,
+      91.25
+    ],
+    "center_separation_km": 0.0,
+    "center_stability": "STABLE",
+    "missing_values": 0,
+    "qc_artifact": "C:\\TRACEBIND-Atmosphere\\phase8\\pilot_study\\artifacts\\qc_masks\\qc_mask_TC_2023_MOCHA.png",
+    "qc_status": "PASS"
+  },
+  "CTRL_2023_IND_01": {
+    "file": "CTRL_2023_IND_01.nc",
+    "dx_m": 26161.77,
+    "dy_m": 27680.9,
+    "mslp_center": [
+      -5.25,
+      77.5
+    ],
+    "search_radius_km": 100.0,
+    "candidate_cells": 33,
+    "local_max_vorticity": -6.846580618002918e-07,
+    "vort_center": [
+      -5.0,
+      77.75
+    ],
+    "center_separation_km": 39.15,
+    "center_stability": "STABLE",
+    "missing_values": 0,
+    "qc_artifact": "C:\\TRACEBIND-Atmosphere\\phase8\\pilot_study\\artifacts\\qc_masks\\qc_mask_CTRL_2023_IND_01.png",
+    "qc_status": "PASS"
+  }
+}

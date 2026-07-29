@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-07-29T05:22:22.221881+00:00",
+  "environment": {
+    "python_version": "3.14.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy_version": "2.5.1",
+    "pandas_version": "3.0.3"
+  },
+  "consistency_checks": {
+    "manifest_matched_cases": 20,
+    "manifest_consistency_passed": true
+  },
+  "label_independent_stats": {
+    "count": 20,
+    "median": 0.7620249597448359,
+    "q1": 0.6537929558124387,
+    "q3": 0.9051716049935019,
+    "iqr": 0.25137864918106323,
+    "skewness": -1.6615049112706706,
+    "kurtosis": 3.5900810245534336
+  },
+  "artifacts_sha256": {
+    "c2_cphi_results.csv": {
+      "relative_path": "extraction\\c2_cphi_results.csv",
+      "sha256": "ed03d8fd46975eda2b3657849a7288f6af137b76c036740970b58e1aba1c70f6"
+    },
+    "c2_validation_summary.json": {
+      "relative_path": "extraction\\c2_validation_summary.json",
+      "sha256": "8064eb45c7caa963324d1372e2211d1fed926406c035c8f255d31e43015b514d"
+    },
+    "c2_cohort_manifest_blinded.json": {
+      "relative_path": "manifest\\c2_cohort_manifest_blinded.json",
+      "sha256": "6b5c5e5c6274521ffbbb1b3bc14c150749ebac3e3209a2ee9edf867f7844d6d8"
+    }
+  }
+}

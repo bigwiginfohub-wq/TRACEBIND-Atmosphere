@@ -1,0 +1,124 @@
+{
+  "unblind_keycard": {
+    "c2_uuid_a8aaadc4": {
+      "original_case_id": "TC_2023_MOCHA",
+      "case_type": "Cyclone",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "a85cb7d8a91f03432a6013bb22639b47295a1a76ebec77db5cddbf3cbb403d85"
+    },
+    "c2_uuid_fa40c633": {
+      "original_case_id": "TC_2020_AMPHAN",
+      "case_type": "Cyclone",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "a6c465e651abb61dd9ba0f6b7920216fd5542a27fed1c37ea4ac761a09e6e93c"
+    },
+    "c2_uuid_aebda966": {
+      "original_case_id": "TC_2019_FANI",
+      "case_type": "Cyclone",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "d42190260821bbde937f5cfa9bb37cd7a407bc29914bd182db9f8493a6b2932a"
+    },
+    "c2_uuid_d60e0f4a": {
+      "original_case_id": "TC_2008_NARGIS",
+      "case_type": "Cyclone",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "4ef826c01581167ea8383d2ba0efe36225bd1631663731b1d11582c25c1a3862"
+    },
+    "c2_uuid_4c0d80da": {
+      "original_case_id": "TC_2021_TAUKTAE",
+      "case_type": "Cyclone",
+      "basin": "Arabian_Sea",
+      "hmac_sha256": "429939778878a0f7ce28d869576726395722d8759c06d98076df7a2a07720e8d"
+    },
+    "c2_uuid_495c8cf2": {
+      "original_case_id": "TC_2021_YAAS",
+      "case_type": "Cyclone",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "11e21b7c192a6e9724cab4a9c4a8732cf801a72e2f19104e5307c996bdd0c49f"
+    },
+    "c2_uuid_f544906f": {
+      "original_case_id": "TC_2019_KYARR",
+      "case_type": "Cyclone",
+      "basin": "Arabian_Sea",
+      "hmac_sha256": "2dcf23211d0dbd874f1d95bef426c66b236af8a7a8990b2bb45a02e44f2825a5"
+    },
+    "c2_uuid_aa20f8c4": {
+      "original_case_id": "TC_2014_HUDHUD",
+      "case_type": "Cyclone",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "e842342fab1089e32d12ba2ffd4fa2e66addf7579c182efb2185936f70ba892d"
+    },
+    "c2_uuid_49511e7b": {
+      "original_case_id": "TC_2013_PHAILIN",
+      "case_type": "Cyclone",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "53a7db1513cf835e760a1a9aab9aa8143491b90ac11f9f25dd88b4b6be412b4c"
+    },
+    "c2_uuid_80ab3494": {
+      "original_case_id": "TC_2019_BULBUL",
+      "case_type": "Cyclone",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "03e210f160ccf19a8af530dc2c1978b09edf5e4b378e42a112c30a5f2c0ee7de"
+    },
+    "c2_uuid_ec81d97e": {
+      "original_case_id": "CTRL_2023_IND_01",
+      "case_type": "Control",
+      "basin": "Indian_Ocean_Equatorial",
+      "hmac_sha256": "5dfaff695d8529d29aff0c59d4ba853f83113ce4d89af745b72f966acbdaaaa4"
+    },
+    "c2_uuid_fbf4a196": {
+      "original_case_id": "CTRL_2023_IND_02",
+      "case_type": "Control",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "c81f4562e0f728fba67b69b595a3137adb049200fd297d055b96dd8ca8e3e4e0"
+    },
+    "c2_uuid_c6fae318": {
+      "original_case_id": "CTRL_2022_MON_LOW1",
+      "case_type": "Control",
+      "basin": "Central_India",
+      "hmac_sha256": "8b6033c9c98c71bfae2308231b3f719e8d3af1b0473cb1dba7b53c00b758f4f2"
+    },
+    "c2_uuid_4b4eea26": {
+      "original_case_id": "CTRL_2022_MON_LOW2",
+      "case_type": "Control",
+      "basin": "North_Bay_of_Bengal",
+      "hmac_sha256": "ed50e910aa3bddb235cb3314102315b28269b4a47a060775fd0c8546ca05f40c"
+    },
+    "c2_uuid_735327ae": {
+      "original_case_id": "CTRL_2021_TROUGH1",
+      "case_type": "Control",
+      "basin": "Arabian_Sea_Offshore",
+      "hmac_sha256": "6eafbf3351a02c01cc124e1c3aa0c7bcc0ebecc20cf27923809aa3745670387f"
+    },
+    "c2_uuid_ff53a69a": {
+      "original_case_id": "CTRL_2021_DEP_01",
+      "case_type": "Control",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "4f979f9df81fe40eeda1d6d0f3905359cf27df5d5a8b00fc27d88a919610fdec"
+    },
+    "c2_uuid_eb59c68d": {
+      "original_case_id": "CTRL_2020_SHEAR_01",
+      "case_type": "Control",
+      "basin": "South_India",
+      "hmac_sha256": "d8fafcbb08da79fbb4b455b0b40768ee5fbc7c898a4aa7c1c67252a52bdad0b8"
+    },
+    "c2_uuid_4df18da4": {
+      "original_case_id": "CTRL_2020_SURGE_01",
+      "case_type": "Control",
+      "basin": "Arabian_Sea",
+      "hmac_sha256": "fafc27d09cdd16d19b97a7072d4c8488b7a3141c0243bebcaae82503569e3bce"
+    },
+    "c2_uuid_fca79975": {
+      "original_case_id": "CTRL_2019_TROUGH2",
+      "case_type": "Control",
+      "basin": "Bay_of_Bengal",
+      "hmac_sha256": "d1edb6046cca10bd9ff534382d9b198dd1b7ed21f07d748062c7e808da315932"
+    },
+    "c2_uuid_dc364aad": {
+      "original_case_id": "CTRL_2018_LOW_03",
+      "case_type": "Control",
+      "basin": "Central_India",
+      "hmac_sha256": "2bd00a65c56d4b0c8b6105b756bbea86313513a1b1964c23c1068eb5be36f559"
+    }
+  }
+}

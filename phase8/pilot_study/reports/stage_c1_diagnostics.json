@@ -1,0 +1,135 @@
+{
+  "invariance_characterization": {
+    "rotational_invariance": {
+      "c_phi_0_deg": 0.0,
+      "c_phi_90_deg": 3.397403791202665e-18,
+      "absolute_diff": 3.397403791202665e-18,
+      "invariant": true
+    },
+    "translation_sensitivity_h1": [
+      {
+        "shift_cells_xy": [
+          0,
+          0
+        ],
+        "pixel_offset": 0.0,
+        "eta_normalized_offset": 0.0,
+        "c_phi": 0.0
+      },
+      {
+        "shift_cells_xy": [
+          5,
+          5
+        ],
+        "pixel_offset": 7.07,
+        "eta_normalized_offset": 0.1179,
+        "c_phi": 0.0
+      },
+      {
+        "shift_cells_xy": [
+          10,
+          10
+        ],
+        "pixel_offset": 14.14,
+        "eta_normalized_offset": 0.2357,
+        "c_phi": 3.107714079970862e-17
+      },
+      {
+        "shift_cells_xy": [
+          15,
+          15
+        ],
+        "pixel_offset": 21.21,
+        "eta_normalized_offset": 0.3536,
+        "c_phi": 9.706867974864757e-19
+      },
+      {
+        "shift_cells_xy": [
+          20,
+          20
+        ],
+        "pixel_offset": 28.28,
+        "eta_normalized_offset": 0.4714,
+        "c_phi": 4.661571119956293e-17
+      },
+      {
+        "shift_cells_xy": [
+          25,
+          25
+        ],
+        "pixel_offset": 35.36,
+        "eta_normalized_offset": 0.5893,
+        "c_phi": 3.1062214502744624e-17
+      },
+      {
+        "shift_cells_xy": [
+          30,
+          30
+        ],
+        "pixel_offset": 42.43,
+        "eta_normalized_offset": 0.7071,
+        "c_phi": 3.1062214502744624e-17
+      }
+    ]
+  },
+  "cohort_diagnostics": {
+    "TC_2023_MOCHA": {
+      "id": "TC_2023_MOCHA",
+      "name": "Cyclone Mocha",
+      "c_phi_full_domain": 0.17995736002922058,
+      "c_phi_eyewall_shell": 0.17163966596126556,
+      "phase7_geometry_assumptions": {
+        "array_center_indices": [
+          60.0,
+          60.0
+        ],
+        "array_center_lat_lon": [
+          18.75,
+          91.75
+        ],
+        "detected_mslp_indices": [
+          59,
+          58
+        ],
+        "detected_mslp_lat_lon": [
+          18.5,
+          91.25
+        ],
+        "pixel_offset_cells": 2.24,
+        "physical_offset_km": 59.58,
+        "domain_radius_km": 2232.26,
+        "eta_normalized_offset": 0.0267
+      },
+      "diagnostic_plot": "C:\\TRACEBIND-Atmosphere\\phase8\\pilot_study\\artifacts\\cphi_diagnostics\\geometry_diag_TC_2023_MOCHA.png"
+    },
+    "CTRL_2023_IND_01": {
+      "id": "CTRL_2023_IND_01",
+      "name": "Monsoon Low Control",
+      "c_phi_full_domain": 0.5762770175933838,
+      "c_phi_eyewall_shell": 0.5481791496276855,
+      "phase7_geometry_assumptions": {
+        "array_center_indices": [
+          60.0,
+          60.0
+        ],
+        "array_center_lat_lon": [
+          -20.0,
+          80.0
+        ],
+        "detected_mslp_indices": [
+          119,
+          50
+        ],
+        "detected_mslp_lat_lon": [
+          -5.25,
+          77.5
+        ],
+        "pixel_offset_cells": 59.84,
+        "physical_offset_km": 1654.14,
+        "domain_radius_km": 2322.54,
+        "eta_normalized_offset": 0.7122
+      },
+      "diagnostic_plot": "C:\\TRACEBIND-Atmosphere\\phase8\\pilot_study\\artifacts\\cphi_diagnostics\\geometry_diag_CTRL_2023_IND_01.png"
+    }
+  }
+}

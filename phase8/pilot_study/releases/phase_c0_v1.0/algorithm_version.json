@@ -1,0 +1,8 @@
+{
+  "version": "v1.0",
+  "phase": "Phase C0 Gate Auditor",
+  "auditor_script": "src\\qc_report.py",
+  "auditor_sha256": "9bd18d2e8adee274a2396020eb356b4f85a40c3203d1981598554158a13848a7",
+  "status": "FROZEN",
+  "frozen_at_utc": "2026-07-28T17:45:00Z"
+}

@@ -1,0 +1,48 @@
+{
+  "provenance": {
+    "phase7_release": "sandbox-v1.0",
+    "metric_id": "C_phi",
+    "metric_function": "compute_phase_coherence",
+    "definition": "Mean absolute velocity alignment with the local tangential unit vector relative to a specified vortex center",
+    "formula": "<|((u * e_theta_x) + (v * e_theta_y)) / |V||>",
+    "center_reference": "minimum_pressure_center",
+    "extraction_engine_hash": "2fb6622337132153bd66d974a59231179d5e9db10afbc234cc4e370d363d8ed9",
+    "characterization_engine_hash": "eea6539333a9281c7e2d9361042784ef11082156821d3f947bc6a182049103fb",
+    "qc_auditor_release": "phase_c0_v1.0"
+  },
+  "summary_metrics": {
+    "delta_c_phi": 0.2913459454664532,
+    "relative_increase": 0.5487369324021295,
+    "interpretation": "TC Mocha exhibits ~54.9% higher tangential coherence than the Monsoon Low control case."
+  },
+  "results": {
+    "TC_2023_MOCHA": {
+      "case_type": "Cyclone",
+      "v_max_kts": 64.2571029663086,
+      "p_min_hpa": 960.3831176757812,
+      "c_phi_frozen": 0.8222851603990197,
+      "center_coordinates": [
+        18.5,
+        91.25
+      ],
+      "shell_mask_bounds_km": [
+        30.0,
+        150.0
+      ]
+    },
+    "CTRL_2023_IND_01": {
+      "case_type": "Monsoon Low Control",
+      "v_max_kts": 25.88521385192871,
+      "p_min_hpa": 1009.7537231445312,
+      "c_phi_frozen": 0.5309392149325665,
+      "center_coordinates": [
+        -5.25,
+        77.5
+      ],
+      "shell_mask_bounds_km": [
+        50.0,
+        250.0
+      ]
+    }
+  }
+}

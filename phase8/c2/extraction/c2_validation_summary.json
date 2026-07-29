@@ -1,0 +1,10 @@
+{
+  "total_cases": 20,
+  "c_phi_mean": 0.7468171548311192,
+  "c_phi_std": 0.1870294973173736,
+  "c_phi_min": 0.1369413199624094,
+  "c_phi_max": 0.9404510607323074,
+  "outlier_id": "c2_uuid_ec81d97e",
+  "coherent_count": 15,
+  "dispersed_count": 5
+}

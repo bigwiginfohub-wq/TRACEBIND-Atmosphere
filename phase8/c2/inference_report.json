@@ -1,0 +1,24 @@
+{
+  "cohort_summary": {
+    "n_cyclone": 10,
+    "n_control": 10,
+    "total_sample": 20
+  },
+  "group_statistics": {
+    "cyclone_mean": 0.746450975771036,
+    "cyclone_std": 0.1366600097277856,
+    "cyclone_median": 0.6926893336556377,
+    "control_mean": 0.7471833338912026,
+    "control_std": 0.2348839709770982,
+    "control_median": 0.8235201683317264
+  },
+  "pre_registered_hypothesis_tests": {
+    "directional_hypothesis": "cyclone_C_phi > control_C_phi",
+    "mann_whitney_u": 40.0,
+    "p_val_mann_whitney_one_sided": 0.7863223430510962,
+    "welch_t_stat": -0.00852233742207439,
+    "p_val_welch_two_sided": 0.993316651813808,
+    "hedges_g": -0.003650264097466221,
+    "cliffs_delta": -0.2
+  }
+}

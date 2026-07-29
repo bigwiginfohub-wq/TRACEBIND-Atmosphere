@@ -1,0 +1,26 @@
+{
+  "version": "1.1.0",
+  "created_utc": "2026-07-28T17:25:00Z",
+  "cohort": [
+    {
+      "id": "TC_2023_MOCHA",
+      "name": "Cyclone Mocha",
+      "type": "intensifying_tc",
+      "basin": "North Indian Ocean",
+      "file_path": "phase6/data/raw/era5_nc/TC_2023_2023129N08091.nc",
+      "r_inner_km": 30.0,
+      "r_outer_km": 150.0,
+      "max_center_sep_km": 75.0
+    },
+    {
+      "id": "CTRL_2023_IND_01",
+      "name": "Monsoon Low Control",
+      "type": "negative_control",
+      "basin": "North Indian Ocean",
+      "file_path": "phase6/data/raw/era5_nc/CTRL_2023_IND_01.nc",
+      "r_inner_km": 50.0,
+      "r_outer_km": 250.0,
+      "max_center_sep_km": 100.0
+    }
+  ]
+}

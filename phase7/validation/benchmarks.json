@@ -1,0 +1,40 @@
+{
+  "benchmark_storms": [
+    {
+      "id": "Tip_1979",
+      "name": "Typhoon Tip",
+      "regime": "Extremely Large TC (Outer Radius > 1000 km)",
+      "date": "1979-10-12T12:00:00Z"
+    },
+    {
+      "id": "Katrina_2005",
+      "name": "Hurricane Katrina",
+      "regime": "Mature Intense Category 5 TC",
+      "date": "2005-08-28T18:00:00Z"
+    },
+    {
+      "id": "Ida_2021",
+      "name": "Hurricane Ida",
+      "regime": "Rapid Intensification (RI)",
+      "date": "2021-08-29T12:00:00Z"
+    },
+    {
+      "id": "Amphan_2020",
+      "name": "Cyclone Amphan",
+      "regime": "Bay of Bengal Super Cyclone",
+      "date": "2020-05-18T18:00:00Z"
+    },
+    {
+      "id": "Mocha_2023",
+      "name": "Cyclone Mocha",
+      "regime": "North Indian Ocean Extreme TC",
+      "date": "2023-05-14T06:00:00Z"
+    },
+    {
+      "id": "Xynthia_2010",
+      "name": "Windstorm Xynthia",
+      "regime": "Non-Tropical Control (Extratropical Baroclinic Cyclone)",
+      "date": "2010-02-27T18:00:00Z"
+    }
+  ]
+}
