@@ -2,9 +2,9 @@
 
 **Document Type:** Methodological & Empirical Research Manuscript
 
-**Version:** 3.1 (Post-Phase 8 C2 Unblinded Validation Candidate)
+**Version:** 3.2.1 (Post-Phase 8 C2 Unblinded Validation Candidate)
 
-**Date:** July 29, 2026
+**Date:** July 31, 2026
 
 **Status:** Submission Candidate / External Peer Review Draft
 
@@ -21,7 +21,7 @@ Classical spatial statistics—such as Moran’s $I$, Geary’s $C$, and empiric
 
 TRACEBIND was evaluated under synthetic, empirical, and prospective blinded protocols—including GroupKFold cross-validation, Fourier surrogate phase scrambling, Leave-One-Storm-Out (LOSO) rank stability, ERA5 atmospheric reanalysis benchmarks, and a prospective $N=20$ access-controlled blinded trial (Phase 8 C2). Synthetic and Phase 5/7 baseline evaluations confirm linear asymptotic scaling $O(P)$ and demonstrate that Tier 1 phase organization dominates global field variance ($\approx 84.8\%$ of variance in PCA), while Tier 2 geometric descriptors operate in orthogonal kinematic dimensions.
 
-Furthermore, prospective blinded testing of scalar Kinematic Phase Coherence ($C_\phi$) in Phase 8 C2 demonstrates that macro phase organization acts as a universal descriptor of synoptic-scale hydrodynamic organization rather than a unique signature of tropical cyclones ($p = 0.7863$, Hedges' $g = -0.0037$). This negative result prospectively falsifies the interpretation of scalar $C_\phi$ as a standalone cyclone discriminator while providing empirical evidence for its role as an upstream organizational filter within the hierarchical taxonomy.
+Furthermore, prospective blinded testing of scalar Kinematic Phase Coherence ($C_\phi$) in Phase 8 C2 demonstrates that macro phase organization acts as a universal descriptor of synoptic-scale hydrodynamic organization rather than a unique signature of tropical cyclones ($p = 0.7863$, Hedges' $g = -0.0037$). This negative result prospectively falsifies the interpretation of scalar $C_\phi$ as a standalone cyclone discriminator while providing empirical evidence for its role as an upstream organizational filter within the hierarchical taxonomy. A subsequent companion study (*TRACEBIND-Albatross*) independently characterized the frozen $C_\phi$ operator, demonstrating numerical stability, identifying an implementation-sensitive preprocessing issue affecting circulation-center estimation, and reporting a moderate association between Global $C_\phi$ and the spatial concentration of local vortical structures.
 
 ---
 
@@ -233,6 +233,10 @@ This observation is consistent with the hierarchical interpretation of the TRACE
 * **Tier 1 ($C_\phi$)** acts as a necessary upstream filter that distinguishes macro-scale coherent flow from stochastic noise.
 * **Tier 2 ($A_{\text{radial}}, S_{\text{orient}}$)** is structurally necessary to provide specific geometric gating (e.g., distinguishing closed rotational symmetry from linear shear zones).
 
+#### Downstream Operator Characterization
+
+Following completion of the blinded trial, the frozen operator underwent an independent numerical characterization study (*TRACEBIND-Albatross*). That study demonstrated numerical stability, identified an implementation-dependent coordinate-orientation issue present in one legacy preprocessing pipeline, evaluated the corrected coordinate-aware implementation, and established that global $C_\phi$ exhibits a moderate association with the spatial concentration of local vortical structures while remaining distinct from cyclone classification itself.
+
 ---
 
 ## 5. Threats to Validity
@@ -243,6 +247,7 @@ To facilitate objective review, key methodological and observational constraints
 2. **Single Reanalysis Product:** Empirical extraction relied exclusively on ERA5 reanalysis fields; cross-center reanalysis variability (e.g., MERRA-2, NCEP-CFSR) was not evaluated.
 3. **Fixed Spatial Window & Level:** Extracted fields were evaluated at fixed spatial domains and single pressure levels, omitting 3D vertical tilting effects.
 4. **Scalar Fourier Abstraction:** Scalar $C_\phi$ collapses global phase angles into a single spatial average, removing localized phase gradient boundaries.
+5. **Coordinate Preprocessing & Derivatives:** Accurate circulation-center estimation requires coordinate-aware derivative operators. The reference TRACEBIND preprocessing pipeline therefore specifies coordinate-array-aware numerical differentiation for circulation-center estimation.
 
 ---
 
@@ -271,12 +276,27 @@ TRACEBIND provides a mathematically formal, cryptographically audited framework 
 1. **Methodological Provenance:** Pre-unblinding snapshot gating and automated auditing establish an explicit, leakage-free empirical workflow.
 2. **Role of Scalar $C_\phi$:** Scalar phase coherence quantifies synoptic-scale hydrodynamic flow organization rather than isolated cyclone identity, establishing the functional requirement for Tier 2 geometric evaluation.
 
+The numerical behavior, implementation verification, and geometric interpretation of the frozen $C_\phi$ operator are examined separately in the companion *TRACEBIND-Albatross* study, allowing the present work to focus on framework definition and blinded empirical validation.
+
 ### 7.2 Future Roadmap
 
 1. **Tensor Phase Formulations:** Extend scalar $C_\phi$ to spatially resolved 2D phase tensor fields.
-2. **Hierarchical Multi-Tier Classification:** Evaluate joint Tier 1 $\rightarrow$ Tier 2 gating across expanded multi-basin atmospheric datasets ($N > 100$).
-3. **Cross-Domain Application:** Apply TRACEBIND to oceanic eddy fields and astrophysical fluid simulations.
+2. **Expanded Multi-Basin Validation:** Evaluate joint Tier 1 $\rightarrow$ Tier 2 gating across expanded atmospheric cohorts ($N > 100$).
+3. **Vertical Atmospheric Structure:** Evaluate phase coherence profiles across pressure levels ($850, 700, 500\text{ hPa}$).
+4. **Cross-Reanalysis Validation:** Benchmark descriptor stability across MERRA-2 and NCEP-CFSR datasets.
+5. **Cross-Domain Application:** Apply TRACEBIND to oceanic eddy fields and astrophysical fluid simulations.
+
+---
+
+## References
+
+1. TRACEBIND Collaboration (2026). *TRACEBIND-Albatross: Numerical Validation, Geometric Characterization, and Robustness Analysis of a Frozen Spatial Phase Coherence Operator*. Companion manuscript.
 
 ```
+
+<ElicitationsGroup message="Next options for your manuscript assembly:">
+  <Elicitation label="Draft TRACEBIND-Albatross companion manuscript outline" query="Draft an outline and manuscript structure for the companion TRACEBIND-Albatross paper, focusing on operator validation, grid calibration, and numerical stability."/>
+  <Elicitation label="Draft Journal Cover Letter for TRACEBIND-Atmosphere" query="Draft a formal cover letter to the journal editor introducing TRACEBIND-Atmosphere v3.2.1 and referencing the companion TRACEBIND-Albatross manuscript."/>
+</ElicitationsGroup>
 
 ```
